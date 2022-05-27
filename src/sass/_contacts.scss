@@ -1,0 +1,167 @@
+.contacts-section{
+    background-color: #FFF5F6;
+}
+
+.contact-span{
+    display: inline-block;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+.contacts__list, .contact__time-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts__item{
+    background-color: $main-white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+}
+
+.contacts__item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.contact__place-type{
+    text-transform: uppercase;
+    background-color: $product-banana-color;
+    color: $main-white;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+
+    border-radius: 4px;
+
+    .contacts__item:nth-child(2)  &{
+        background-color: $product-green-color;
+    }
+}
+
+.contact__place-header{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+
+    letter-spacing: 0.04em;
+}
+
+.contact__place-description{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: $paragraph-color;
+}
+
+.contact__time-list{
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.contact__time-item:last-child{
+    margin-top: 10px;
+}
+
+.contact__days{
+    display: block;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+}
+
+.contact__time{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: $hero-circle-color;
+}
+
+.contacts__link{
+    display: block;
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: $paragraph-color;
+
+    &:hover, &:focus{
+        color: $hero-circle-color;
+    }
+}
+
+.contact-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $first-accent-color;
+    border: none;
+
+    width: 161px;
+    height: 44px;
+    border-radius: 22px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .button-text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $main-white;
+
+        margin-right: 10px;
+    }
+
+    .button-icon {
+        stroke: $main-white;
+    }
+
+    &+&{
+        background-color: $main-white;
+    }
+
+    &+& .button-text {
+        color: $first-accent-color;
+    }
+
+    &+& .button-icon {
+        stroke: $first-accent-color;
+    }
+
+    &:not(:last-child){
+        margin-top: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
