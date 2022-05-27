@@ -1,0 +1,62 @@
+
+
+.section {
+    background-color: #FFF5F6;
+}
+
+// .advantages 
+// {
+//     }
+
+.advantages__list {
+    outline: 2px solid tomato ;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 70px;
+padding-left: 20px;
+
+display: flex;
+flex-direction: column;
+gap: 32px;
+}
+
+.advantages__item {
+margin: 0;
+
+flex: 1 1 230px;
+
+    
+}
+.advantages__slogan {
+        outline: 2px solid greenyellow ;
+
+    text-align: left;
+    
+   font-family: 'Titan One', sans-serif; 
+   font-size: 36px;
+line-height: 1.138;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #D41443;
+
+
+padding-bottom: 26px;
+   
+
+}
+.advantages__text {
+    text-align: left;
+
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.66;
+
+padding-bottom: 30px;
+
+margin: 0;
+
+
+}
+
