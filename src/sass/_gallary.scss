@@ -1,0 +1,37 @@
+.gallery {
+  width: 100%;
+  background-image: linear-gradient(#fff5f6 40%, #fff 40%);
+}
+
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+@media screen and (max-device-width: 479px)  {
+  /* 1 column for narrow smartphone screens */
+  .grid-sizer { width: 100%; }
+}
+@media screen and (min-device-width: 480px) and (max-device-width: 767px)  {
+  /* 2 columns for smartphone screens */
+  .grid-sizer { width: 50%; }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1279px) {
+  /* 5 columns for large screens */
+  .grid-sizer { width: 33.33%; }
+}
+@media screen and (min-device-width: 1280px) {
+  /* 3 columns for tablet screens */
+  .grid-sizer { width: 20%; }
+}
+
+.grid-item {
+  height: auto;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  
+}
+.grid-item:nth-child(even) { width: 200px; }
+.grid-item:nth-child(odd) { width: 240px; }
