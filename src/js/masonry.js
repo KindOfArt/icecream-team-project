@@ -1,5 +1,6 @@
 $('.grid').masonry({
   itemSelector: '.grid-item',
-  columnWidth: 0,
-  gutter: 0,
+  columnWidth: '.grid-sizer',
+  percentPosition: true,
+  stamp: '.grid-item:hover',
 });
