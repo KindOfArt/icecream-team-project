@@ -4,6 +4,14 @@
     background-image: url(../images/about/mobile/drop-of-milk-mob.png);
     background-repeat: no-repeat;
     background-position: 0% 75%;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
+       
+    }
 }
 
 
