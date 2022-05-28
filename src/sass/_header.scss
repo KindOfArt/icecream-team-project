@@ -1,27 +1,49 @@
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 40px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $hero-bg-color;
+    border: 0;
+
+    border-radius: 22px;
+
+    color: $first-accent-color;
+    background-color: $main-white;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
     }
+}
+
+.header-btn__icon,
+.menu-btn__icon {
+    width: 1em;
+    height: 1em;
+    fill: $first-accent-color;
+}
+
+/////////////////////////////////////////////
+
+.header {
+    background-color: $hero-bg-color ;
 }
 
 
 .header__body {
-    position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
+    align-items: center;
+    padding-top: 32px;
 }
 
 .header__logo {
@@ -48,151 +70,42 @@
     color: $first-accent-color;
 }
 
-
-.header__burger {
-    display: none;
-
-    @media screen and (max-width: 1199px) {
-        display: block;
-        position: relative;
-
-        width: 20px;
-        height: 12px;
-        z-index: 2;
-
-        &::before,
-        &::after {
-            content: "";
-
-            background-color: $first-accent-color;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        &::before {
-            top: 0;
-        }
-
-        &::after {
-            bottom: 0;
-        }
-    }
+.buttons-wrap {
+    display: flex;
+    gap: 32px;
+    order: 2;
 }
 
-
-.header__burger.active::before {
-    transform: rotate(45deg);
-    top: 5px;
-    background-color: $main-white;
-}
-
-.header__burger.active::after {
-    transform: rotate(-45deg);
-    bottom: 5px;
-    background-color: $main-white;
-}
-
-.header__burger.active .header__icon-burger {
-    transform: scale(0);
-
-}
-
-.menu-wrap {
-    position: relative;
-}
-
-.header__burger.active {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.header__icon-burger {
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 100%;
-    height: 2px;
-    z-index: 3;
-    background-color: $first-accent-color;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-}
-
-.header__menu {
-    @media screen and (max-width: 1199px) {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100%;
-        padding-top: 58px;
-        background-color: $menu-bg-color;
-        transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+.menu__open-btn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    fill: $first-accent-color;
 
     @media screen and (min-width: 1200px) {
-        display: flex;
-
+        display: none;
     }
 }
 
-.header__menu.active {
-    right: 0;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        max-width: 320px;
-    }
-
-}
-
-
-.header__btn-wrap {
-    display: flex;
-    justify-content: center;
-    order: 2;
-    margin-bottom: 19px;
-}
-
-.header__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-    min-width: 186px;
-    min-height: 44px;
-
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-
-    border: 0;
-    border-radius: 22px;
-
-    color: $first-accent-color;
-    background-color: $main-white;
-
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        background-color: #ECEBEB;
-    }
+.menu__icon-open {
+    background-size: cover;
 }
 
 .header__list {
+    display: none;
+
     @media screen and (min-width: 1200px) {
         display: flex;
-        justify-content: center;
     }
+
 }
 
-.header__item {}
+.header__item:not(:last-child) {
+    margin-right: 35px;
+}
 
 .header__link {
     display: block;
@@ -204,8 +117,6 @@
     line-height: 1.28;
     color: $main-white;
 
-    max-width: 320px;
-
     &:hover {
         color: $first-accent-color;
     }
@@ -213,13 +124,10 @@
     &:focus {
         color: $first-accent-color;
     }
+}
 
-    @media screen and (max-width: 1200px) {
-        padding-left: 34px;
-        width: 100%;
-        border-top: 1px solid #E18298;
-        border-bottom: 1px solid #E18298;
+.header-btn {
+    @media screen and (max-width: 767px) {
+        display: none;
     }
-
-
 }

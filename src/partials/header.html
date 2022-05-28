@@ -5,45 +5,39 @@
                 <span class="logo__icon"></span>
                 <span class="logo__text">ISECREAM</span>
             </a>
-            <div class="menu-wrap">
-                <div class="header__burger">
-                    <span class="header__icon-burger"></span>
-                </div>
-                <!-- <button class="header__burger">
-                    <svg width="40px" height="40px">
-                        <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+            <div class="buttons-wrap">
+                <button class="menu__open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu__icon-open" width="40px" height="40px">
+                        <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
                     </svg>
-                </button> -->
-                <nav class="header__menu">
-                    <!-- <button class="header__burger">
-                        <svg width="40px" height="40px">
-                            <use href="./images/symbol-defs.svg#icon-close_40px"></use>
-                        </svg>
-                    </button> -->
-                    <div class="header__btn-wrap">
-                        <button class="header__btn" type="button">Buy now</button>
-                    </div>
-                    <ul class="header__list null-list">
-                        <li class="header__item">
-                            <a class="header__link null-link" href="">Home</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link null-link" href="">About us</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link null-link" href="">How it’s made?</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link null-link" href="">Our products</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link null-link" href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                </button>
+                <button class="header-btn button" type="button">
+                    <span class="header-btn__text">Buy now</span>
+                    <svg class="header-btn__icon" width="4px" height="8px">
+                        <use href="./images/symbol-defs.svg#icon-chevron-right"></use>
+                    </svg>
+                </button>
             </div>
-
+            <nav class="header__nav">
+                <ul class="header__list null-list">
+                    <li class="header__item">
+                        <a class="header__link null-link" href="">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link null-link" href="">About us</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link null-link" href="">How it’s made?</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link null-link" href="">Our products</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link null-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+
     </div>
 </header>
-<script src="js/mobile-menu.js"></script>
