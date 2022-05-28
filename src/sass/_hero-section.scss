@@ -108,12 +108,19 @@
     line-height: calc(10px / 8px);
 
     color: $first-accent-color;
-    background-color: #e5e5e5;
+    background-color: $main-white;
+    &:hover {
+      background-color: $hover-color;
+    }
+
     // .hero__link--accent
 
     &--accent {
       color: $main-white;
       background-color: $first-accent-color;
+      &:hover {
+        background-color: #c7133e;
+      }
     }
   }
 }
