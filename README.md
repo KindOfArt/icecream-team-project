@@ -1,7 +1,6 @@
 **Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
 
 # Parcel template
-у меня такое было.... В Мак надо доустановить xcode... мне вот что помогло - в терминале VScode ввести команду xcode-select --install  и нажать return
 
 Этот проект был создан при помощи Parcel. Для знакомства и настройки
 дополнительных возможностей [обратись к документации](https://parceljs.org/).
