@@ -1,5 +1,6 @@
 .contacts-section{
     background-color: #FFF5F6;
+    padding-bottom: 50px;
 }
 
 .contact-span{
@@ -14,8 +15,6 @@
     @media screen and (min-width: 1200px) {
         width: 390px;
     }
-
-
     background-color: $main-white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
