@@ -1,10 +1,26 @@
-// .container {
-//     // max-width: 320px;
-//     margin: 0 auto;
-//     min-width: 270px;
-//     padding-left: 20px;
-//     padding-right: 20px;
-// }
+.container {
+    margin: 0 auto;
+
+    @media (max-width: 1199px) {
+        padding: 0 20px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 15px;
+    }
+
+    @media (min-width: 320px) {
+        width: 320px;
+    }
+
+    @media (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1200px;
+    }
+}
 
 
 .link {
@@ -48,6 +64,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .header__logo {
@@ -74,16 +91,17 @@ img {
     color: $first-accent-color;
 }
 
+
 .header__burger {
     display: none;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: block;
         position: relative;
+
         width: 20px;
         height: 12px;
         z-index: 2;
-
 
         &::before,
         &::after {
@@ -106,6 +124,7 @@ img {
     }
 }
 
+
 .header__burger.active::before {
     transform: rotate(45deg);
     top: 5px;
@@ -123,6 +142,16 @@ img {
 
 }
 
+.menu-wrap {
+    position: relative;
+}
+
+.header__burger.active {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .header__icon-menu {
     position: absolute;
     left: 0;
@@ -136,7 +165,7 @@ img {
 }
 
 .header__menu {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         position: fixed;
         top: 0;
         right: -100%;
@@ -147,19 +176,26 @@ img {
         transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    @media screen and (min-width: 1200px) {
+        display: flex;
 
-    @media screen and (min-width: 425px) {
-        max-width: 254px;
     }
 }
 
 .header__menu.active {
     right: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        max-width: 320px;
+    }
+
 }
+
 
 .header__btn-wrap {
     display: flex;
     justify-content: center;
+    order: 2;
     margin-bottom: 19px;
 }
 
@@ -167,7 +203,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    z-index: 5;
     min-width: 186px;
     min-height: 44px;
 
@@ -192,8 +228,9 @@ img {
 }
 
 .header__list {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
+
     }
 }
 
@@ -217,7 +254,7 @@ img {
         color: $first-accent-color;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1200px) {
         padding-left: 34px;
         width: 100%;
         border-top: 1px solid #E18298;
