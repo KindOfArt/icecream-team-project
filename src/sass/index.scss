@@ -1,8 +1,12 @@
-@import './fonts';
-@import './color-vars';
 @import './common';
-@import './container';
+@import './color-vars';
+@import './fonts';
+@import './visually-hidden';
+
 @import './global-null-styles';
 @import './null-list-style';
 @import './null-link-style';
-@import './gallary';
+@import './container';
+
+@import './about-section';
+@import './contacts';
