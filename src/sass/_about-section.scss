@@ -3,7 +3,7 @@
     background-color: $bg-gradient-color;
     background-image: url(../images/about/mobile/drop-of-milk-mob.png);
     background-repeat: no-repeat;
-    background-position: 0% 76%;
+    background-position: 0% 79%;
     background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
@@ -22,9 +22,10 @@
     margin-bottom: 15px;
 
     font-family: Titan One;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 1.17;
+    @include font(400, 18px, 1.17, 0.04em);
+    // font-size: 18px;
+    // line-height: 21px;
+    // letter-spacing: 1.17;
     color: $hero-circle-color;
     text-align: center;  
     text-transform: uppercase;
@@ -35,9 +36,10 @@
     margin-bottom: 32px;
 
     font-family: Titan One;
-    font-size: 34px;
-    line-height: 39px;
-    letter-spacing: 1.15;
+    @include font(400, 34px, 1.15, 0.04em);
+    // font-size: 34px;
+    // line-height: 39px;
+    // letter-spacing: 1.15;
     color: $first-accent-color;
     text-align: center;  
     text-transform: uppercase;
@@ -57,10 +59,11 @@
     margin-bottom: 20px;
 
     font-family: DM Sans;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
-    letter-spacing: 1.6;
+    @include font(500, 12px, 1.62, 0);
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 19px;
+    // letter-spacing: 1.6;
 
 }
 .about__item:not(:first-child) {
@@ -73,10 +76,11 @@
   
     font-family: inherit;
     color: $first-accent-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 1.29;
+    @include font(700, 14px, 1.29, 0.04em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 18px;
+    // letter-spacing: 1.29;
   
     background-color: $main-white;  
     border-radius: 22px;
