@@ -1,0 +1,126 @@
+.hero {
+  background-color: $hero-bg-color;
+  overflow: hidden;
+
+  // .hero__title-thumb
+
+  &__circle-thumb {
+    position: relative;
+    padding-top: 25px;
+
+    &::before {
+      position: absolute;
+      top: 15px;
+      left: 16px;
+      content: '';
+      display: block;
+      width: 346px;
+      height: 344px;
+      border-radius: 50%;
+      background-color: $hero-circle-color;
+    }
+  }
+  //   .hero__bg-thumb
+  &__bg-thumb {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 136px;
+    padding-bottom: 158px;
+    transition: padding 250px ease;
+    @media (max-width: 767px) {
+      background-image: url(../images/hero/mobile/ice-cream-mob.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero/mobile/ice-cream-mob@2x.png);
+      }
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center right 16px;
+    }
+    @media (max-width: 216px) {
+      background-position: center;
+    }
+    overflow: hidden;
+  }
+
+  //   .hero__title-thumb
+  &__title-thumb {
+    @media (max-width: 767px) {
+      transform: translateY(-15px);
+    }
+  }
+  // .hero__title
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-family: 'Titan One', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: calc(30px / 26px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    // .hero__title--bigger
+    color: $main-white;
+    @media (max-width: 270px) {
+      font-size: 18px;
+    }
+
+    &--bigger {
+      display: block;
+      font-size: 48px;
+      line-height: calc(46px / 48px);
+      @media (max-width: 270px) {
+        font-size: 29px;
+      }
+
+      color: $first-accent-color;
+    }
+  }
+
+  // .hero__links-list
+
+  &__links-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  // .hero__links-item
+
+  &__links-item {
+  }
+
+  // .hero__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 24px;
+    padding: 0 14px;
+    border-radius: 20px;
+
+    font-size: 8px;
+    line-height: calc(10px / 8px);
+
+    color: $first-accent-color;
+    background-color: $main-white;
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    // .hero__link--accent
+
+    &--accent {
+      color: $main-white;
+      background-color: $first-accent-color;
+      &:hover {
+        background-color: #c7133e;
+      }
+    }
+  }
+}

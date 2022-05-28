@@ -76,6 +76,10 @@
     text-align: center;
     color: $paragraph-color;
     margin-top: 16px;
+
+    &+& {
+        margin-top: 0px;
+    }
 }
 
 .footer__tell {
