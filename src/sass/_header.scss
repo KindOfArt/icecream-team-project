@@ -54,7 +54,7 @@
 .logo__icon {
     display: block;
     border-radius: 50px;
-    margin-right: 20px;
+    margin-right: 15px;
     width: 50px;
     height: 50px;
     background-color: $first-accent-color;
@@ -72,21 +72,53 @@
 
 .buttons-wrap {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
     order: 2;
 }
 
+.menu__line {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: $first-accent-color;
+}
+
 .menu__open-btn {
+    position: relative;
+    width: 20px;
+    height: 12px;
+
     padding: 0;
-    width: 40px;
-    height: 40px;
+
     border: 0;
     cursor: pointer;
     background-color: transparent;
-    fill: $first-accent-color;
 
     @media screen and (min-width: 1200px) {
         display: none;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        // z-index: 5;
+        width: 100%;
+        height: 2px;
+        background-color: $first-accent-color;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
     }
 }
 
