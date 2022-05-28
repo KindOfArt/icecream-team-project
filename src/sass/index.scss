@@ -3,10 +3,21 @@
 @import './color-vars';
 @import './fonts';
 @import './visually-hidden';
+@import './mixins';
 
 @import './global-null-styles';
 @import './null-list-style';
 @import './null-link-style';
 @import './container';
-@import './advantages';
 @import './contacts';
+@import './hero-section';
+@import './about-section';
+@import './advantages';
+@import './gallary';
+@import './customer-reviews';
+@import './contacts';
+@import './our-locations-backdrop';
+@import './our-locations-modal';
+@import './our-locations-map';
+@import './footer';
+@import './modal';

@@ -1,0 +1,92 @@
+.section-footer {
+    background-color: $bg-gradient-color;
+    padding: 20px 0px;
+}
+
+.footer__wrap {
+    padding-bottom: 40px;
+}
+
+.fotter__first-text {
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: $hero-circle-color;
+    max-width: 232px;
+    margin-bottom: 16px;
+}
+
+.footer__seond-text {
+    font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $first-accent-color;
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.footer__item+.footer__item {
+    margin-left: 28px;
+}
+
+.footer__soc-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: $main-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEA5BB;
+    margin: 0px;
+    padding: 0px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $first-accent-color;
+    }
+}
+
+.footer__soc-icon {
+    fill: currentColor;
+}
+
+.footer__contact {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+    color: $main-black;
+}
+
+.footer__copyright {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: $paragraph-color;
+    margin-top: 16px;
+
+    &+& {
+        margin-top: 0px;
+    }
+}
+
+.footer__tell {
+    color: $first-accent-color;
+}
+
+.footer__border {
+    display: block;
+    border-bottom: 1px solid $border-color;
+}

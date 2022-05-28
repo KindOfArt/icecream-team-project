@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Ice Cream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,13 +11,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="shortcut icon"
+      type="image/avif"
+      href="/src/images/favicon.avif"
+    />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
+
     <main>
-      <include src="./partials/advantages.html" />
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about-section.html"/></include>
+      <include src="./partials/advantages.html" /></include>
+      <include src="./partials/gallary.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
+      <include src="./partials/our-locations-modal.html"></include>
     </main>
+    <script src="./js/our-locations-modal.js"></script>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal.html"></include>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./js/masonry.js"></script>
+    
   </body>
 </html>

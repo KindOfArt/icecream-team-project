@@ -1,62 +1,107 @@
-
-
 .section {
-    background-color: #FFF5F6;
+  background-color: #fff5f6;
+  outline: 1px solid tomato;
 }
-
-// .advantages 
-// {
-//     }
 
 .advantages__list {
-    outline: 2px solid tomato ;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 70px;
-padding-left: 20px;
-
-display: flex;
-flex-direction: column;
-gap: 32px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: 527px;
+  }
 }
-
 .advantages__item {
-margin: 0;
-
-flex: 1 1 230px;
-
-    
+  outline: 5px solid greenyellow;
+  max-width: 230px;
 }
+
+
+.advantages__wrap1::before {
+  content: '';
+  background-image: url(/src/images/advantages/icon1.png);
+
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 33px;
+  height: 50px;
+  display: block;
+
+  margin-bottom: 25px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/advantages/2xicon1.png);
+  }
+}
+
+
+
+.advantages__wrap2::before {
+  content: '';
+  background-image: url(/src/images/advantages/icon2.png);
+
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 50px;
+  height: 50px;
+  display: block;
+
+  margin-bottom: 25px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/advantages/2xicon2.png);
+  }
+}
+
+
+.advantages__wrap3::before {
+  content: '';
+  background-image: url(/src/images/advantages/icon3.png);
+
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 44px;
+  height: 50px;
+  display: block;
+
+  margin-bottom: 25px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/advantages/2xicon3.png);
+  }
+}
+
 .advantages__slogan {
-        outline: 2px solid greenyellow ;
+  font-family: 'Titan One', sans-serif;
+  font-size: 36px;
+  line-height: 1.138;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 
-    text-align: left;
-    
-   font-family: 'Titan One', sans-serif; 
-   font-size: 36px;
-line-height: 1.138;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #D41443;
-
-
-padding-bottom: 26px;
-   
-
+  padding-bottom: 20px;
 }
+
 .advantages__text {
-    text-align: left;
-
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 1.66;
-
-padding-bottom: 30px;
-
-margin: 0;
-
-
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
 }
-
