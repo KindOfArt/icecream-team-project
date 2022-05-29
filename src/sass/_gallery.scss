@@ -1,0 +1,29 @@
+.gallery {
+  width: 100%;
+  background-image: linear-gradient(#fff5f6 60%, #fff 40%);
+}
+
+.gallary-container {
+  display: flex;
+  align-items: center;
+}
+
+.grid-item {
+  margin: 2px;
+}
+
+.gallery-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.huge-pic {
+  width: 110px;
+  height: 80px;
+}
+
+.thumb-3 {
+  padding-top: 15px;
+}

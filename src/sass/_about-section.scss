@@ -1,19 +1,32 @@
-.section {
+.about__section {
   padding-top: 40px;
-  // padding-bottom: 40px;
   background-color: $bg-gradient-color;
-}
-
-.container {
   background-image: url(../images/about/mobile/drop-of-milk-mob.png);
   background-repeat: no-repeat;
-  background-position: 0% 75%;
+  background-position: 0% 79%;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
+  }
 }
+
 // ========
 
 .about__label {
   display: block;
   margin-bottom: 15px;
+
+  font-family: Titan One;
+  @include font(400, 18px, 1.17, 0.04em);
+  // font-size: 18px;
+  // line-height: 21px;
+  // letter-spacing: 1.17;
+  color: $hero-circle-color;
+  text-align: center;
+  text-transform: uppercase;
 
   font-family: Titan One;
   font-size: 18px;
@@ -26,6 +39,15 @@
 
 .about__title {
   margin-bottom: 32px;
+
+  font-family: Titan One;
+  @include font(400, 34px, 1.15, 0.04em);
+  // font-size: 34px;
+  // line-height: 39px;
+  // letter-spacing: 1.15;
+  color: $first-accent-color;
+  text-align: center;
+  text-transform: uppercase;
 
   font-family: Titan One;
   font-size: 34px;
@@ -41,11 +63,18 @@
 }
 
 .about__list {
-  width: 220px;
+  max-width: 220px;
 }
 
 .about__item {
   margin-bottom: 20px;
+
+  font-family: DM Sans;
+  @include font(500, 12px, 1.62, 0);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 19px;
+  // letter-spacing: 1.6;
 
   font-family: DM Sans;
   font-weight: 500;
@@ -56,17 +85,18 @@
 .about__item:not(:first-child) {
   color: $paragraph-color;
 }
-.btn {
+.about__btn {
   display: block;
   width: 176px;
   height: 44px;
 
   font-family: inherit;
   color: $first-accent-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 1.29;
+  @include font(700, 14px, 1.29, 0.04em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 18px;
+  // letter-spacing: 1.29;
 
   background-color: $main-white;
   border-radius: 22px;
