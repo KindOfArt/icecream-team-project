@@ -1,24 +1,94 @@
 <section class="hero">
   <div class="container">
-    <div class="hero__circle-thumb">
-      <div class="hero__bg-thumb">
+    <div class="hero__flex-bg-thumb">
+      <div class="hero__left-side">
         <div class="hero__title-thumb">
           <h1 class="hero__title">
             ice cream<br />
             made with
             <span class="hero__title hero__title--bigger">passion</span>
           </h1>
-          <ul class="hero__links-list null-list" >
+          <ul class="hero__links-list null-list">
             <li class="hero__links-item">
               <a class="hero__link null-link hero__link--accent" href="#"
                 >Products</a
               >
             </li>
             <li>
-              <a class="hero__link null-link" href="#">How it’s made?</a>
+              <a class="hero__link null-link menu-close-btn" href="#"
+                >How it’s made?</a
+              >
             </li>
           </ul>
         </div>
+        <div class="hero__description-thumb">
+          <img
+            class="hero__description-img"
+            srcset="
+              ./images/hero/tablet/milk-tab.png      152w,
+              ./images/hero/tablet/milk-tab@2x.png   304w,
+              ./images/hero/desktop/milk-desk.png    213w,
+              ./images/hero/desktop/milk-desk@2x.png 426w
+            "
+            sizes="(min-width:1280px) 213px,152px"
+            src="./images/hero/tablet/milk-tab.png"
+            alt=""
+          />
+          <div class="hero__description">
+            <p class="hero__description-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <button type="buttuon" class="hero__description-btn">
+              <svg class="" width="10" height="10">
+                <use href="./images/symbol-defs.svg#icon-arrow-right2"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__main-img-thumb">
+        <img
+          class="hero__main-img"
+          srcset="
+            ./images/hero/mobile/ice-cream-mob.png      171w,
+            ./images/hero/mobile/ice-cream-mob@2x.png   342w,
+            ./images/hero/tablet/ice-cream-tab.png      143w,
+            ./images/hero/tablet/ice-cream-tab@2x.png   286w,
+            ./images/hero/desktop/ice-cream-desk.png    236w,
+            ./images/hero/desktop/ice-cream-desk@2x.png 472w
+          "
+          src="./images/hero/mobile/ice-cream-mob.png"
+          alt=""
+          sizes="(min-width: 1280px) 236px, (min-width:768px) 143px, 171px"
+        />
+      </div>
+      <div class="hero__right-side">
+        <div class="hero__total-stores total-srtore">
+          <ul class="total-store__list null-list">
+            <li class="total-store__item total-store__item--first">
+              <p class="hero__stores-quantity">16</p>
+              <p class="hero__stores-type">cafes</p>
+            </li>
+            <li class="total-store__item total-store__item--secound">
+              <p class="hero__stores-quantity">23</p>
+              <p class="hero__stores-type">food trucks</p>
+            </li>
+          </ul>
+        </div>
+
+        <img
+          class="hero__right-site-img"
+          srcset="
+            ./images/hero/tablet/so-tasty-tab.png      190w,
+            ./images/hero/tablet/so-tasty-tab@2x.png   380w,
+            ./images/hero/desktop/so-tasty-desk.png    304w,
+            ./images/hero/desktop/so-tasty-desk@2x.png 608w
+          "
+          src="./images/hero/tablet/so-tasty-tab.png"
+          alt=""
+          sizes="(min-width:1280px) 304px, 190px"
+        />
       </div>
     </div>
   </div>
