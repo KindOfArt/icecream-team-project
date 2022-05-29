@@ -1,5 +1,6 @@
 .contacts-section{
     background-color: #FFF5F6;
+    padding-bottom: 50px;
 }
 
 .contact-span{
@@ -7,6 +8,13 @@
 }
 
 .contacts__item{
+    @media screen and (min-width: 720px) {
+        width: 225px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 390px;
+    }
     background-color: $main-white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -33,6 +41,7 @@
     
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 32px;
 
     border-radius: 4px;
 
@@ -104,6 +113,7 @@
     align-items: center;
     justify-content: center;
     background-color: $first-accent-color;
+    cursor: pointer;
     border: none;
 
     width: 161px;
@@ -130,6 +140,10 @@
 
     &+&{
         background-color: $main-white;
+    }
+
+    &+&:hover {
+        background-color: $hover-color;
     }
 
     &+& .button-text {

@@ -2,11 +2,24 @@
 @import './color-vars';
 @import './fonts';
 @import './visually-hidden';
+@import './mixins';
 
 @import './global-null-styles';
 @import './null-list-style';
 @import './null-link-style';
 @import './container';
+@import './hero-section';
+@import './about-section';
+@import './gallery';
+//
+
+@import './customer-reviews';
 @import './contacts';
-@import './header';
 @import './mob-menu';
+@import './footer';
+@import './backdrop';
+
+// @import './modal';
+@import './our-locations-backdrop';
+@import './our-locations-modal';
+@import './our-locations-map';
