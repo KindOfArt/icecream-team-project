@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice Cream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <link
-      rel="shortcut icon"
-      type="image/avif"
-      href="/src/images/favicon.avif"
-    />
+    <link rel="shortcut icon" type="image/avif" href="/src/images/favicon.avif" />
     <script type="module" src="./index.js"></script>
   </head>
+
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-
+  <include src="./partials/header.html"/></include>
     <main>
-      <include src="./partials/hero.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"/></include>
       <include src="./partials/about-section.html"/></include>
       <include src="./partials/advantages.html" /></include>
       <include src="./partials/gallery.html"></include>
       <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
-      <include src="./partials/our-locations-modal.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-
+    <include src="./partials/our-locations-modal.html"></include>
+    <include src="./partials/header-modal.html"></include>
+    <include src="./partials/franchise.html"></include>
+    <script type="module" src="./JS/header-modal.js"></script>
     <script type="module" src="./JS/location-modal.js"></script>
+    <script type="module" src="./JS/mobile-menu.js"></script>
+    <script type="module" src="./JS/modal-franchise.js"></script>
   </body>
+
 </html>
