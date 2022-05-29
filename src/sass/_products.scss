@@ -1,8 +1,8 @@
-.products{
+.products {
   padding-top: 80px;
+  background-color: #ffffff;
   padding-bottom: 40px;
 }
-
 .products__heading {
   display: block;
   text-align: center;
@@ -48,7 +48,6 @@ p {
 .products__link {
   display: block;
   position: relative;
-  
   //   background-color: #ffb8ca;
   //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   //     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -63,7 +62,7 @@ p {
   }
   margin-top: 150px;
   // &:not(:last-child) {
-  //   margin-bottom: 150px;
+  //   margin-bottom: 30px;
   // }
   &--pink {
     background-color: #ffb8ca;
@@ -126,6 +125,9 @@ h3 {
   height: 40px;
 
   border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
 
   border-color: rgba(255, 255, 255, 0.2);
   -moz-transition: all 0.8s ease-in-out;

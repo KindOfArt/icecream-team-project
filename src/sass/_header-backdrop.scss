@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $hero-bg-color;
+  background: rgba(0, 0, 0, 0.2);
   transition: transform 250ms linear 300ms, opacity 250ms linear 300ms;
   overflow-y: scroll;
 }
