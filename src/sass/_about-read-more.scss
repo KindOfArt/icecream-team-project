@@ -1,6 +1,5 @@
-
 /* The Modal (background) */
-.franchise {
+.about-read-more {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -15,12 +14,20 @@
 }
 
 /* Modal Content */
-.franchise__div {
+.about-read-more__div {
   border-radius: 24px;
   background-color: $main-white;
   margin: auto;
   padding: 20px;
   border: 1px solid $border-color;
+  background-image: url(../images/about/mobile/cow-mob.png);
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about/mobile/cow-mob@2x.png);
+    background-size: 280px 279px;
+  }
   @media screen and (max-device-width: 1279px) {
     width: 80%;
   }
@@ -34,16 +41,16 @@
 /* Add Animation */
 @keyframes animatetop {
   from {
-    bottom: -100px;
+    top: -300px;
     opacity: 0;
   }
   to {
-    bottom: 0;
+    top: 0;
     opacity: 1;
   }
 }
 /* The Close Button */
-.franchise__close {
+.about-read-more__close {
   color: $hero-circle-color;
   float: right;
   font-size: 28px;
@@ -51,15 +58,15 @@
   transition: color 250ms linear;
 }
 
-.franchise__close:hover,
-.franchise__close:focus {
+.about-read-more__close:hover,
+.about-read-more__close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   color: $first-accent-color;
 }
 
-.franchise__p {
+.about-read-more__p {
   white-space: pre-line;
   font-family: 'DM Sans';
   font-weight: 500;
@@ -67,60 +74,4 @@
   line-height: 31px;
   color: $hero-circle-color;
   padding: 2px 30px;
-}
-
-.franchise__form {
-  text-align: center;
-}
-
-.franchise__label {
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 31px;
-  color: $hero-circle-color;
-}
-
-.franchise__input {
-  border: 2px solid $hero-circle-color;
-  padding-left: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 180px;
-  height: 29px;
-  border-radius: 10px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline-width: 0;
-}
-
-.franchise__input:focus,
-.franchise__input:hover {
-  border: 2px solid $first-accent-color;
-}
-
-.franchise__small {
-  display: block;
-}
-
-.button__franchise-submit {
-  display: block;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $first-accent-color;
-  cursor: pointer;
-  border: none;
-  width: 161px;
-  height: 44px;
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  color: $main-white;
-  transition: background-color 250ms linear;
-}
-
-.button__franchise-submit:hover,
-.button__franchise-submit:focus {
-  background-color: $hero-circle-color;
 }
