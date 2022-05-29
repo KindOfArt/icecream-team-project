@@ -48,9 +48,9 @@
     background-image: repeating-linear-gradient(
       to bottom,
       transparent,
-      transparent 30px,
-      $border-color 30px,
-      $border-color 31px
+      transparent 29.6px,
+      $border-color 29.6px,
+      $border-color 30.6px
     );
     &::before {
       content: '';
@@ -73,8 +73,6 @@
     }
     &-wraper {
       padding-top: 43px;
-      padding-left: 11.5px;
-      padding-right: 11.5px;
       padding-bottom: 17px;
       background-color: #fafafa;
       margin-bottom: 16px;
@@ -82,7 +80,7 @@
   }
   &__name {
     position: relative;
-    margin-top: 53px;
+    margin-top: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
