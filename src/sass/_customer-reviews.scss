@@ -15,8 +15,9 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #e5e5e5;
+  background-color: transparent;
   background-image: url(../images/customers/home_slider.svg);
+  background-size: contain;
 }
 
 .customers-reviews {
@@ -33,12 +34,11 @@
   }
   &__text {
     position: relative;
-    max-width: 180px;
+    z-index: 1;
+    max-width: 157px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 11.5px;
-    padding-right: 11.5px;
-    padding-bottom: 9;
+    padding-bottom: 9px;
 
     font-weight: 500;
     font-size: 12px;
@@ -59,7 +59,7 @@
       height: 40px;
       position: absolute;
       top: -13px;
-      left: 0px;
+      left: -12px;
       z-index: -1;
 
       background-image: url(../images/customers/mob/quotes.png);
@@ -70,6 +70,14 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/customers/mob/quotes@2x.png);
       }
+    }
+    &-wraper {
+      padding-top: 43px;
+      padding-left: 11.5px;
+      padding-right: 11.5px;
+      padding-bottom: 17px;
+      background-color: #fafafa;
+      margin-bottom: 16px;
     }
   }
   &__name {
@@ -89,23 +97,34 @@
       width: 32px;
       height: 4px;
 
-      background-image: url(../images/customers/markers.png);
-      background-size: cover;
+      // background-image: url(../images/customers/markers.png);
+      // background-size: cover;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/customers/markers@2x.png);
-      }
+      // @media (min-device-pixel-ratio: 2),
+      //   (min-resolution: 192dpi),
+      //   (min-resolution: 2dppx) {
+      //   background-image: url(../images/customers/markers@2x.png);
+      // }
     }
   }
 }
 
-// .markers {
-//   display: inline-block;
-//   height: 40px;
-//   width: 40px;
-//   border-radius: 50%;
-//   background-color: aqua;
-//   z-index: 5;
-// }
+.markers {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #c1133e;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 14px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #c1133e;
+  }
+}
