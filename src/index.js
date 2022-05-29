@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper', {
     // limitRotation: true,
   },
   autoplay: {
-    delay: 2500,
+    delay: 250000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
