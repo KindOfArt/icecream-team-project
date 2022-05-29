@@ -117,19 +117,11 @@
   width: 4px;
   border-radius: 50%;
   background-color: #c1133e;
-  &::before {
-    content: '';
-    position: absolute;
-    left: 14px;
-    height: 4px;
-    width: 4px;
-    border-radius: 50%;
-    background-color: #c1133e;
-  }
+  &::before,
   &::after {
     content: '';
     position: absolute;
-    right: 14px;
+    left: 14px;
     height: 4px;
     width: 4px;
     border-radius: 50%;
