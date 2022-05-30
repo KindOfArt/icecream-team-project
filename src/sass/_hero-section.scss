@@ -1,5 +1,4 @@
 .hero {
-  font-weight: 400;
   letter-spacing: 0.04em;
   background-color: $hero-bg-color;
   @media (max-width: 767px) {
@@ -43,6 +42,7 @@
 
   &__title {
     font-family: 'Titan One', sans-serif;
+    font-weight: 400;
     @media (min-width: 1280px) {
       margin-bottom: 24px;
       font-size: 34px;
