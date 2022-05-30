@@ -1,11 +1,12 @@
 .gallery {
   width: 100%;
-  background-image: linear-gradient(#fff5f6 60%, #fff 40%);
+  background-image: linear-gradient(#fff5f6 45%, #fff 55%);
 }
 
 .gallary-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .grid-item {
@@ -15,15 +16,37 @@
 .gallery-pic {
   width: 40px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 7px;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 85px;
+    height: 85px;
+    border-radius: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+  }
+  
 }
 
 .huge-pic {
-  width: 110px;
+  width: 80px;
   height: 80px;
+
+  @media screen and (min-width: 768px) {
+    width: 175px;
+    height: 175px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .thumb-3 {
-  padding-top: 15px;
+  padding-top: 25px;
 }

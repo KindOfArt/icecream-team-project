@@ -1,95 +1,107 @@
-.about__section{
-    padding-top: 40px;
-    background-color: $bg-gradient-color;
-    background-image: url(../images/about/mobile/drop-of-milk-mob.png);
-    background-repeat: no-repeat;
-    background-position: 0% 79%;
-    background-size: contain;
+.about__section {
+  padding-top: 40px;
+  
+  background-color: $bg-gradient-color;
+  background-image: url(../images/about/mobile/drop-of-milk-mob.png);
+  background-repeat: no-repeat;
+  background-position: 0% 79%;
+  background-size: contain;
 
-    @media (min-device-pixel-ratio: 2),
+
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
-       
-    }
+    background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
+
+  }
 }
 
+.about__container {
+ display: flex;
+ flex-direction: column;
+ @media screen and (min-width: 321px)  {
+  align-items: center;
+ }
+}
 
 // ========
 
 .about__label {
-    display: block;
-    margin-bottom: 15px;
+  display: block;
+  margin-bottom: 15px;
 
-    font-family: Titan One;
-    @include font(400, 18px, 1.17, 0.04em);
-    // font-size: 18px;
-    // line-height: 21px;
-    // letter-spacing: 1.17;
-    color: $hero-circle-color;
-    text-align: center;  
-    text-transform: uppercase;
 
+  font-family: Titan One;
+  @include font(400, 18px, 1.17, 0.04em);
+  // font-size: 18px;
+  // line-height: 21px;
+  // letter-spacing: 1.17;
+
+  color: $hero-circle-color;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .about__title {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    font-family: Titan One;
-    @include font(400, 34px, 1.15, 0.04em);
-    // font-size: 34px;
-    // line-height: 39px;
-    // letter-spacing: 1.15;
-    color: $first-accent-color;
-    text-align: center;  
-    text-transform: uppercase;
 
+  font-family: Titan One;
+  @include font(400, 34px, 1.15, 0.04em);
+  // font-size: 34px;
+  // line-height: 39px;
+  // letter-spacing: 1.15;
+
+  color: $first-accent-color;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .about__img {
-    margin-bottom: 40px;
-
+  margin-bottom: 40px;
 }
 
 .about__list {
-    max-width: 220px;
+  max-width: 220px;
+  // margin: 0 auto;
 }
 
 .about__item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-family: DM Sans;
-    @include font(500, 12px, 1.62, 0);
-    // font-weight: 500;
-    // font-size: 12px;
-    // line-height: 19px;
-    // letter-spacing: 1.6;
+
+  font-family: DM Sans;
+  @include font(500, 12px, 1.62, 0);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 19px;
+  // letter-spacing: 1.6;
 
 }
 .about__item:not(:first-child) {
-    color: $paragraph-color;
+  color: $paragraph-color;
 }
 .about__btn {
-    display: block;
-    width: 176px;
-    height: 44px;
-  
-    font-family: inherit;
-    color: $first-accent-color;
-    @include font(700, 14px, 1.29, 0.04em);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 18px;
-    // letter-spacing: 1.29;
-  
-    background-color: $main-white;  
-    border-radius: 22px;
-    border: none;
-  
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:focus,
-    &:hover {
-    background-color: #ECEBEB;
-    }
+  display: block;
+  width: 176px;
+  height: 44px;
+
+  font-family: inherit;
+  color: $first-accent-color;
+  @include font(700, 14px, 1.29, 0.04em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 18px;
+  // letter-spacing: 1.29;
+
+  background-color: $main-white;
+  border-radius: 22px;
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
 }

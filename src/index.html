@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,20 +18,38 @@
     />
     <script type="module" src="./index.js"></script>
   </head>
+
   <body>
+    <script
+      type="module"
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/header.html"></include>
 
     <main>
       <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
       <include src="./partials/about-section.html"></include>
       <include src="./partials/advantages.html"></include>
       <include src="./partials/gallery.html"></include>
       <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
-      <include src="./partials/our-locations-modal.html"></include>
     </main>
+    
     <include src="./partials/footer.html"></include>
-
-    <script type="module" src="./JS/location-modal.js"></script>
+    <include src="./partials/our-locations-modal.html"></include>
+    <include src="./partials/header-modal.html"></include>
+    <include src="./partials/about-read-more.html"></include>
+    <include src="./partials/franchise.html"></include>
+    
+    <script type="module" src="./JS/header-mod.js"></script>
+    <script type="module" src="./JS/location-mod.js"></script>
+    <script type="module" src="./JS/mob-menu.js"></script>
+    <script type="module" src="./JS/modal-about-read-more.js"></script>
+    <script type="module" src="./JS/modal-franchise.js"></script>
   </body>
 </html>
