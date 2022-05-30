@@ -3,6 +3,9 @@
   letter-spacing: 0.04em;
 
   background-color: $hero-bg-color;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
   // .hero__flex-bg-thumb
 
   &__flex-bg-thumb {
@@ -19,6 +22,7 @@
       left: 0;
       top: 100px;
       z-index: 2;
+      overflow: hidden;
     }
   }
 
@@ -193,7 +197,6 @@
     }
     @media (max-width: 767px) {
       justify-content: flex-end;
-
       overflow: hidden;
     }
     display: flex;
@@ -204,6 +207,7 @@
       position: absolute;
       content: '';
       display: block;
+
       @media (min-width: 1280px) {
         top: -54px;
         left: 70px;
@@ -224,7 +228,6 @@
       }
       border-radius: 50%;
       background-color: #ffa5ba;
-      overflow: hidden;
     }
   }
   // .hero__main-img
