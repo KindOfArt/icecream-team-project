@@ -1,82 +1,81 @@
 .hero {
+  font-weight: 400;
+  letter-spacing: 0.04em;
+
   background-color: $hero-bg-color;
-  overflow: hidden;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
+  // .hero__flex-bg-thumb
+
+  &__flex-bg-thumb {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  // .hero__left-side
+
+  &__left-side {
+    @media (max-width: 767px) {
+      position: absolute;
+      left: 0;
+      top: 100px;
+      z-index: 2;
+      overflow: hidden;
+    }
+  }
 
   // .hero__title-thumb
 
-  &__circle-thumb {
-    position: relative;
-    padding-top: 25px;
-
-    &::before {
-      position: absolute;
-      top: 15px;
-      left: 16px;
-      content: '';
-      display: block;
-      width: 346px;
-      height: 344px;
-      border-radius: 50%;
-      background-color: $hero-circle-color;
-    }
-  }
-  //   .hero__bg-thumb
-  &__bg-thumb {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 136px;
-    padding-bottom: 158px;
-    transition: padding 250px ease;
-    @media (max-width: 767px) {
-      background-image: url(../images/hero/mobile/ice-cream-mob.png);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/hero/mobile/ice-cream-mob@2x.png);
-      }
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center right 16px;
-    }
-    @media (max-width: 216px) {
-      background-position: center;
-    }
-    overflow: hidden;
-  }
-
-  //   .hero__title-thumb
   &__title-thumb {
-    @media (max-width: 767px) {
-      transform: translateY(-15px);
+    @media (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 20px;
     }
   }
+
   // .hero__title
 
   &__title {
-    margin-bottom: 20px;
-
     font-family: 'Titan One', sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: calc(30px / 26px);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    // .hero__title--bigger
-    color: $main-white;
-    @media (max-width: 270px) {
-      font-size: 18px;
+    @media (min-width: 1280px) {
+      margin-bottom: 24px;
+      font-size: 34px;
+      line-height: calc(44px / 34px);
     }
+    @media (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: calc(25px / 22px);
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 18px;
+      font-size: 26px;
+      line-height: calc(30px / 26px);
+    }
+
+    text-transform: uppercase;
+
+    color: $main-white;
+    // .hero__title--bigger
 
     &--bigger {
       display: block;
-      font-size: 48px;
-      line-height: calc(46px / 48px);
-      @media (max-width: 270px) {
-        font-size: 29px;
+      @media (min-width: 1280px) {
+        font-size: 58px;
+        line-height: calc(52px / 58px);
       }
-
+      @media (min-width: 768px) and (max-width: 1279px) {
+        font-size: 34px;
+        line-height: calc(31px / 34px);
+      }
+      @media (max-width: 767px) {
+        font-size: 48px;
+        line-height: calc(46px / 48px);
+      }
       color: $first-accent-color;
     }
   }
@@ -84,8 +83,7 @@
   // .hero__links-list
 
   &__links-list {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     gap: 8px;
   }
 
@@ -98,28 +96,261 @@
 
   &__link {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 24px;
-    padding: 0 14px;
+    @media (min-width: 1280px) {
+      padding: 11px 23px;
+      font-size: 14px;
+      line-height: calc(18px / 14px);
+    }
+    @media (max-width: 1279px) {
+      padding: 9px 14px;
+      font-size: 8px;
+      line-height: calc(10px / 8px);
+    }
     border-radius: 20px;
-
-    font-size: 8px;
-    line-height: calc(10px / 8px);
 
     color: $first-accent-color;
     background-color: $main-white;
-    &:hover {
-      background-color: $hover-color;
-    }
-
     // .hero__link--accent
 
     &--accent {
       color: $main-white;
       background-color: $first-accent-color;
-      &:hover {
-        background-color: #c7133e;
+    }
+  }
+
+  // .hero__description-thumb
+
+  &__description-thumb {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // .hero__description-img
+
+  &__description-img {
+  }
+
+  // .hero__description
+
+  &__description {
+  }
+
+  // .hero__description-text
+
+  &__description-text {
+    @media (max-width: 1279px) {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 7px;
+      max-width: 130px;
+      font-size: 8px;
+      line-height: calc(12px / 8px);
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 20px;
+      max-width: 200px;
+      font-size: 14px;
+      line-height: calc(20px / 14px);
+    }
+
+    color: $main-white;
+  }
+
+  // .hero__description-icon
+
+  &__description-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      min-width: 18px;
+      min-height: 18px;
+    }
+    @media (min-width: 1280px) {
+      width: 26px;
+      height: 26px;
+    }
+    border: none;
+    border-radius: 50%;
+    background-color: $main-white;
+
+    cursor: pointer;
+    & > svg {
+      display: block;
+    }
+  }
+
+  // .hero__main-img-thumb
+
+  &__main-img-thumb {
+    position: relative;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      left: -15px;
+    }
+    @media (max-width: 767px) {
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+
+      @media (min-width: 1280px) {
+        top: -54px;
+        left: 70px;
+        width: 534px;
+        height: 534px;
+      }
+      @media (min-width: 768px) and (max-width: 1279px) {
+        top: -37px;
+        left: -33px;
+        width: 340px;
+        height: 340px;
+      }
+      @media (max-width: 767px) {
+        width: 346px;
+        height: 346px;
+        top: -9px;
+        left: 15px;
+      }
+      border-radius: 50%;
+      background-color: #ffa5ba;
+    }
+  }
+  // .hero__main-img
+  &__main-img {
+    position: relative;
+    z-index: 1;
+  }
+  // .hero__right-side
+
+  &__right-side {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    align-self: flex-end;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  // .hero__total-stores
+
+  &__total-stores {
+    @media (min-width: 1280px) {
+      margin-bottom: 103px;
+    }
+    @media (max-width: 1279px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  // .hero__stores-quantity
+
+  &__stores-quantity {
+    position: relative;
+    z-index: 1;
+    font-family: 'Titan One', sans-serif;
+    @media (min-width: 1280px) {
+      font-size: 46px;
+      line-height: calc(53px / 46px);
+    }
+    @media (max-width: 1279px) {
+      font-size: 28px;
+      line-height: calc(32px / 28px);
+    }
+    text-transform: uppercase;
+
+    color: $first-accent-color;
+  }
+
+  // .hero__stores-type
+
+  &__stores-type {
+    font-size: 14px;
+    line-height: calc(18px / 14px);
+
+    color: $main-white;
+  }
+
+  // .hero__right-site-img
+
+  &__right-site-img {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.total-srtore {
+}
+.total-store {
+  // .total-store__list
+
+  &__list {
+  }
+
+  // .total-store__item
+
+  &__item {
+    position: relative;
+    margin-right: 18px;
+    // .total-store__item--first
+
+    &--first {
+      &::before {
+        position: absolute;
+        top: 0;
+
+        content: '';
+        display: block;
+        @media (min-width: 1280px) {
+          right: -18px;
+          width: 30px;
+          height: 30px;
+        }
+        @media (min-width: 768px) and (max-width: 1279px) {
+          right: -10px;
+          width: 16px;
+          height: 16px;
+        }
+        border-radius: 50%;
+        background-color: $main-white;
+      }
+    }
+
+    // .total-store__item--secound
+
+    &--secound {
+      &::before {
+        position: absolute;
+        top: 0;
+        content: '';
+        display: block;
+        @media (min-width: 1280px) {
+          right: -18px;
+          width: 30px;
+          height: 30px;
+        }
+        @media (min-width: 768px) and (max-width: 1279px) {
+          right: -10px;
+          width: 16px;
+          height: 16px;
+        }
+        border-radius: 50%;
+        background-color: $main-white;
       }
     }
   }

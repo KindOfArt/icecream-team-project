@@ -20,7 +20,7 @@
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
-  window.matchMedia('(min-width: 1200px)').addEventListener('change', e => {
+  window.matchMedia('(min-width: 1280px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
