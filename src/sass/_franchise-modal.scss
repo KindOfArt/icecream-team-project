@@ -45,12 +45,12 @@
 /* The Close Button */
 .franchise__close {
   position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 50px;
-  height: 50px;
+  right: 15px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 0;
   background-color: $main-white;
   cursor: pointer;
   color: $hero-circle-color;
