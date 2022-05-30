@@ -162,12 +162,11 @@ h3 {
   top: -30%;
   height: auto;
   @media (min-width: 768px) {
+    top: -25%;
+  }
+  @media (min-width: 1200px) {
     top: -40%;
   }
-
-  // @media (min-width: 1200px) {
-  //   top: -20%;
-  // }
 }
 
 .products__img {
