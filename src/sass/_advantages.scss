@@ -1,8 +1,6 @@
 .advantages {
   background-color: #fff5f6;
-  //   outline: 1px solid tomato;
 }
-
 .advantages__list {
   display: flex;
   flex-direction: column;
@@ -36,34 +34,34 @@
 
 .advantages__item--start::before {
   background-image: url(/src/images/advantages/icon1.png);
+  width: 33px;
+  height: 50px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(/src/images/advantages/2xicon1.png);
-    width: 33px;
-    height: 50px;
   }
 }
 
 .advantages__item--center::before {
   background-image: url(/src/images/advantages/icon2.png);
+  width: 50px;
+  height: 50px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(/src/images/advantages/2xicon2.png);
-    width: 50px;
-    height: 50px;
   }
 }
 
 .advantages__item--end::before {
   background-image: url(/src/images/advantages/icon3.png);
+  width: 44px;
+  height: 50px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(/src/images/advantages/2xicon3.png);
-    width: 44px;
-    height: 50px;
   }
 }
 
