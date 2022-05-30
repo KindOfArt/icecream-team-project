@@ -19,6 +19,17 @@ p {
   text-transform: uppercase;
   color: #ffa5ba;
   font-family: Titan One;
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    padding-bottom: 18px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    padding-bottom: 16px;
+  }
 }
 .products__header {
   margin: auto;
@@ -30,7 +41,18 @@ p {
   text-transform: uppercase;
   color: #d41443;
   font-family: Titan One;
+  @media (min-width: 768px) {
+    // display: flex;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  @media (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
 }
+
 .products__list {
   display: flex;
   padding: 0;
@@ -86,6 +108,10 @@ p {
   color: #ffffff;
   margin-bottom: 32px;
   font-family: Titan One;
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
   &::after {
     content: ' • • • ';
 
@@ -110,6 +136,14 @@ p {
   margin-left: 40px;
   margin-right: 40px;
   font-family: DM Sans;
+  @media (min-width: 768px) {
+    // display: flex;
+    line-height: 1.9;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
 h3 {
   margin: auto;
@@ -165,7 +199,7 @@ h3 {
     top: -25%;
   }
   @media (min-width: 1200px) {
-    top: -40%;
+    top: -30%;
   }
 }
 
