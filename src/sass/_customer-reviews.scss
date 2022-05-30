@@ -4,7 +4,8 @@
 // }
 .swiper-wrapper {
   margin-bottom: 16px;
-  @include tablet {
+  box-sizing: border-box;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 32px;
   }
 }
@@ -13,9 +14,17 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  position: initial;
-  // bottom: -10px;
-  //   padding-top: 28px;
+  position: relative;
+  bottom: 0px;
+}
+
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  white-space: nowrap;
+  // bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .swiper-pagination-bullet-active {
@@ -26,11 +35,10 @@
 
 .customers-reviews {
   padding: 80px 0;
-  &__card {
-    margin-left: auto;
-    margin-right: auto;
-    // height: 100%;
+  @include desktop {
+    padding: 120px 0;
   }
+
   &__foto {
     margin-bottom: 32px;
     margin-left: auto;
@@ -42,18 +50,22 @@
   &__text {
     position: relative;
     z-index: 1;
-    max-width: 157px;
-    @include tablet {
-      max-width: 514px;
-    }
-    // margin-left: auto;
-    // margin-right: auto;
     padding-bottom: 9px;
 
+    @include tablet {
+      max-width: 514px;
+      padding-bottom: 8px;
+    }
+    @include desktop {
+      max-width: 750px;
+    }
     @include font(500, 12px, 2.55, null);
     text-align: center;
     @include tablet {
       @include font(null, 14px, 2.16, 0.04em);
+    }
+    @include desktop {
+      @include font(null, 16px, 1.86, null);
     }
 
     background-image: repeating-linear-gradient(
@@ -78,6 +90,10 @@
         top: -17px;
         left: -45px;
       }
+      @include desktop {
+        top: -15px;
+        left: -37px;
+      }
       z-index: -1;
 
       background-image: url(../images/customers/mob/quotes.png);
@@ -91,15 +107,29 @@
     }
     &-wraper {
       margin-bottom: 16px;
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-bottom: 4px;
+      }
       padding-top: 43px;
       padding-bottom: 17px;
       padding-left: 65px;
-      @include tablet {
+      padding-right: 58px;
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
         width: 620px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 51px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         background-color: #fafafa66;
+      }
+      @include desktop {
+        width: 1034px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 142px;
+        padding-top: 47px;
+        padding-bottom: 39px;
       }
       background-color: #fafafa;
     }
@@ -110,8 +140,12 @@
 
     @include font(500, 14px, 1.86, null);
     text-align: center;
+
     @include tablet {
       @include font(null, 16px, null, null);
+    }
+    @include desktop {
+      @include font(null, 20px, null, null);
     }
   }
 }

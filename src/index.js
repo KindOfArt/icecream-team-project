@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    // dynamicBullets: true
+    dynamicBullets: true,
   },
   loop: true,
   // effect: 'fade',
@@ -16,11 +16,11 @@ const swiper = new Swiper('.swiper', {
   // },
   effect: 'flip',
   flipEffect: {
-    slideShadows: false,
+    // slideShadows: false,
     // limitRotation: true,
   },
   autoplay: {
-    delay: 250000,
+    delay: 2500,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
