@@ -1,16 +1,27 @@
 .about__section {
   padding-top: 40px;
+  
   background-color: $bg-gradient-color;
   background-image: url(../images/about/mobile/drop-of-milk-mob.png);
   background-repeat: no-repeat;
-  background-position: 0% 76%;
+  background-position: 0% 79%;
   background-size: contain;
+
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
+
   }
+}
+
+.about__container {
+ display: flex;
+ flex-direction: column;
+ @media screen and (min-width: 321px)  {
+  align-items: center;
+ }
 }
 
 // ========
@@ -52,6 +63,7 @@
 
 .about__list {
   max-width: 220px;
+  // margin: 0 auto;
 }
 
 .about__item {
