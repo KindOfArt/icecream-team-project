@@ -1,0 +1,54 @@
+.upward {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 30%;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  //   background-image: url('../images/arrow-up.svg');
+  border: transparent;
+  border-radius: 50%;
+  background-color: #d88ecf;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 250ms;
+}
+
+.upward.active {
+  bottom: 3%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.upward__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upward__icon {
+  fill: white;
+}
+
+// .menu-open-btn {
+//   background-color: transparent;
+//   display: inline-flex;
+//   border: none;
+//   cursor: pointer;
+//   width: 40px;
+//   height: 40px;
+//   padding: 0;
+//   margin-left: auto;
+// }
+
+// .mobile-menu__icon {
+//   display: flex;
+//   align-items: center;
+// }

@@ -1,24 +1,31 @@
+.about-is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 /* The Modal (background) */
 .about-read-more {
-  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  // overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* Modal Content */
 .about-read-more__div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 24px;
   background-color: $main-white;
-  margin: auto;
-  padding: 20px;
+  padding: 60px 40px;
   border: 1px solid $border-color;
   background-image: url(../images/about/mobile/cow-mob.png);
   background-repeat: no-repeat;
@@ -49,27 +56,38 @@
 }
 /* The Close Button */
 .about-read-more__close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $main-white;
+  cursor: pointer;
   color: $hero-circle-color;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  transition: color 250ms linear;
+  fill: currentColor;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .about-read-more__close:hover,
 .about-read-more__close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  color: $first-accent-color;
+  top: 15px;
+  right: 15px;
+
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover,
+  &:focus {
+    fill: $first-accent-color;
+  }
 }
 
 .about-read-more__p {
-  white-space: pre-line;
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 31px;
-  color: $hero-circle-color;
+  color: $first-accent-color;
   padding: 2px 30px;
 }
