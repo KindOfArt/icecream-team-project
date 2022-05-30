@@ -34,11 +34,9 @@
 /* Add Animation */
 @keyframes animatetop {
   from {
-    bottom: -100px;
     opacity: 0;
   }
   to {
-    bottom: 0;
     opacity: 1;
   }
 }
@@ -63,7 +61,7 @@
   white-space: pre-line;
   font-family: 'DM Sans';
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 31px;
   color: $hero-circle-color;
   padding: 2px 30px;
