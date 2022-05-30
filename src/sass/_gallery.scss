@@ -18,7 +18,10 @@
   height: 40px;
   border-radius: 7px;
   object-fit: cover;
-
+  transition: transform 250ms linear;
+  &:hover {
+    transform: scale(2);
+  }
   @media screen and (min-width: 768px) {
     width: 85px;
     height: 85px;
@@ -29,13 +32,15 @@
     height: 140px;
     border-radius: 25px;
   }
-  
 }
 
 .huge-pic {
   width: 80px;
   height: 80px;
-
+  transition: transform 250ms linear;
+  &:hover {
+    transform: scale(1.2);
+  }
   @media screen and (min-width: 768px) {
     width: 175px;
     height: 175px;
