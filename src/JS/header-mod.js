@@ -8,13 +8,7 @@
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.openModalMenuBtn.addEventListener('click', () => {
-    if (menu.classList.contains('is-open')) {
-      document.body.classList.toggle('modal-open');
-      refs.modal.classList.toggle('header-is-hidden');
-      menu.classList.remove('is-open');
-    }
-  });
+  refs.openModalMenuBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {

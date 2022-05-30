@@ -2,7 +2,6 @@
   z-index: 5;
 }
 .modal {
-  max-width: 450px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -166,6 +165,12 @@
   z-index: -1;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 70%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
@@ -179,7 +184,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .modal {
     min-width: 500px;
     min-height: 550px;
