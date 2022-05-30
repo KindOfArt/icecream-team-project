@@ -1,17 +1,19 @@
 .hero {
-  font-weight: 400;
   letter-spacing: 0.04em;
-
   background-color: $hero-bg-color;
   @media (max-width: 767px) {
+    position: relative;
     padding-top: 20px;
+    overflow: hidden;
   }
   // .hero__flex-bg-thumb
 
   &__flex-bg-thumb {
+    @media (max-width: 767px) {
+      position: relative;
+    }
     display: flex;
     align-items: center;
-    position: relative;
   }
 
   // .hero__left-side
@@ -22,7 +24,6 @@
       left: 0;
       top: 100px;
       z-index: 2;
-      overflow: hidden;
     }
   }
 
@@ -41,6 +42,7 @@
 
   &__title {
     font-family: 'Titan One', sans-serif;
+    font-weight: 400;
     @media (min-width: 1280px) {
       margin-bottom: 24px;
       font-size: 34px;
@@ -89,8 +91,8 @@
 
   // .hero__links-item
 
-  &__links-item {
-  }
+  // &__links-item {
+  // }
 
   // .hero__link
 
@@ -133,13 +135,13 @@
 
   // .hero__description-img
 
-  &__description-img {
-  }
+  // &__description-img {
+  // }
 
   // .hero__description
 
-  &__description {
-  }
+  // &__description {
+  // }
 
   // .hero__description-text
 
@@ -191,7 +193,9 @@
   // .hero__main-img-thumb
 
   &__main-img-thumb {
-    position: relative;
+    @media (min-width: 768px) {
+      position: relative;
+    }
     @media (min-width: 768px) and (max-width: 1279px) {
       left: -15px;
     }
@@ -209,7 +213,7 @@
       display: block;
 
       @media (min-width: 1280px) {
-        top: -54px;
+        top: -40px;
         left: 70px;
         width: 534px;
         height: 534px;
@@ -224,7 +228,7 @@
         width: 346px;
         height: 346px;
         top: -9px;
-        left: 15px;
+        right: -100px;
       }
       border-radius: 50%;
       background-color: #ffa5ba;
@@ -294,13 +298,13 @@
   }
 }
 
-.total-srtore {
-}
+// .total-srtore {
+// }
 .total-store {
   // .total-store__list
 
-  &__list {
-  }
+  // &__list {
+  // }
 
   // .total-store__item
 

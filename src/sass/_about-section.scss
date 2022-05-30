@@ -19,19 +19,13 @@
   display: block;
   margin-bottom: 15px;
 
+
   font-family: Titan One;
   @include font(400, 18px, 1.17, 0.04em);
   // font-size: 18px;
   // line-height: 21px;
   // letter-spacing: 1.17;
-  color: $hero-circle-color;
-  text-align: center;
-  text-transform: uppercase;
 
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 1.17;
   color: $hero-circle-color;
   text-align: center;
   text-transform: uppercase;
@@ -40,19 +34,13 @@
 .about__title {
   margin-bottom: 32px;
 
+
   font-family: Titan One;
   @include font(400, 34px, 1.15, 0.04em);
   // font-size: 34px;
   // line-height: 39px;
   // letter-spacing: 1.15;
-  color: $first-accent-color;
-  text-align: center;
-  text-transform: uppercase;
 
-  font-family: Titan One;
-  font-size: 34px;
-  line-height: 39px;
-  letter-spacing: 1.15;
   color: $first-accent-color;
   text-align: center;
   text-transform: uppercase;
@@ -69,6 +57,7 @@
 .about__item {
   margin-bottom: 20px;
 
+
   font-family: DM Sans;
   @include font(500, 12px, 1.62, 0);
   // font-weight: 500;
@@ -76,11 +65,6 @@
   // line-height: 19px;
   // letter-spacing: 1.6;
 
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 19px;
-  letter-spacing: 1.6;
 }
 .about__item:not(:first-child) {
   color: $paragraph-color;
