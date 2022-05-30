@@ -10,7 +10,7 @@
   //   background-image: url('../images/arrow-up.svg');
   border: transparent;
   border-radius: 50%;
-  background-color: #ffb8f6;
+  background-color: #d88ecf;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -22,7 +22,7 @@
 }
 
 .upward.active {
-  bottom: 30%;
+  bottom: 3%;
   visibility: visible;
   opacity: 1;
 }
