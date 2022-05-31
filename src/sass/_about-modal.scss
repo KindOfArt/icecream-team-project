@@ -11,7 +11,6 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  // overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   transition: 250ms linear;
@@ -23,9 +22,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  // overflow-y: auto; /* Enable scroll if needed */
   border-radius: 24px;
   background-color: $main-white;
-  padding: 60px 40px;
   border: 1px solid $border-color;
   background-image: url(../images/about/mobile/cow-mob.png);
   background-repeat: no-repeat;
@@ -35,11 +34,18 @@
     background-image: url(../images/about/mobile/cow-mob@2x.png);
     background-size: 280px 279px;
   }
-  @media screen and (max-device-width: 767px) {
-    width: calc(100% - 20px);
+  @media screen and (max-device-width: 479px) {
+    width: 80%;
+    height: 100%;
+    padding: 30px 20px;
+  }
+  @media screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    width: 80%;
+    padding: 50px 30px;
   }
   @media screen and (min-device-width: 768px) {
-    width: 600px;
+    width: 614px;
+    padding: 60px 40px;
   }
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -65,6 +71,8 @@
   }
 }
 .about-read-more__p {
+  height: 100%;
+  overflow-y: auto;
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
@@ -72,9 +80,9 @@
   color: $hero-bg-color;
   padding: 2px 30px;
   transition: 250ms linear;
-  // {"ease":".25,.1,.25,1","linear":"0,0,1,1","ease-in":".42,0,1,1","ease-out":"0,0,.58,1","ease-in-out":".42,0,.58,1"}
   &:hover,
   &:focus {
     color: $first-accent-color;
+    transform: scale(1.1);
   }
 }
