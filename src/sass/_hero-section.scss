@@ -135,8 +135,15 @@
 
   // .hero__description-img
 
-  // &__description-img {
-  // }
+  &__description-img {
+    @media (min-width: 768px) {
+      animation-name: milk;
+      animation-duration: 2000ms;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+    }
+  }
 
   // .hero__description
 
@@ -201,12 +208,10 @@
     }
     @media (max-width: 767px) {
       justify-content: flex-end;
-      overflow: hidden;
     }
     display: flex;
     justify-content: center;
     flex: 1 0 auto;
-
     &::before {
       position: absolute;
       content: '';
@@ -224,11 +229,33 @@
         width: 340px;
         height: 340px;
       }
+      @media (min-width: 768px) {
+        animation-name: bit;
+        animation-duration: 1500ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        @keyframes bit {
+          from {
+            transform: scale(1.03);
+          }
+          to {
+            transform: scale(0.9);
+          }
+        }
+      }
       @media (max-width: 767px) {
         width: 346px;
         height: 346px;
         top: -9px;
         right: -100px;
+
+        animation-name: bubble;
+        animation-duration: 2000ms;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+        animation-iteration-count: 1;
       }
       border-radius: 50%;
       background-color: #ffa5ba;
@@ -238,6 +265,13 @@
   &__main-img {
     position: relative;
     z-index: 1;
+    @media (max-width: 767px) {
+      animation-name: iceCreamShow;
+      animation-duration: 2000ms;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+    }
   }
   // .hero__right-side
 
@@ -293,8 +327,14 @@
   // .hero__right-site-img
 
   &__right-site-img {
-    position: relative;
     z-index: 1;
+    @media (min-width: 768px) {
+      animation-name: soTasty;
+      animation-duration: 2000ms;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+    }
   }
 }
 
@@ -357,5 +397,39 @@
         background-color: $main-white;
       }
     }
+  }
+}
+@keyframes bubble {
+  0% {
+    opacity: 0;
+    transform: translateX(-170%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes iceCreamShow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes milk {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes soTasty {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
