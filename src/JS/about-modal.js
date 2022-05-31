@@ -1,15 +1,22 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-about]'),
-    closeModalBtn: document.querySelector('[data-modal-close-about]'),
-    modal: document.querySelector('[data-modal-about]'),
+    openModalBtnAbout: document.querySelector('[data-modal-open-about]'),
+    closeModalBtnAbout: document.querySelector('[data-modal-close-about]'),
+    modalAbout: document.querySelector('[data-modal-about]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnAbout.addEventListener('click', toggleModalAbout);
+  refs.closeModalBtnAbout.addEventListener('click', toggleModalAbout);
 
-  function toggleModal() {
+  function toggleModalAbout() {
     document.body.classList.toggle('about-read-more');
-    refs.modal.classList.toggle('about-is-hidden');
+    refs.modalAbout.classList.toggle('about-is-hidden');
   }
+  // on click anywhere NOT the window close modal
+  window.addEventListener('click', event => {
+    if (event.target === refs.modalAbout) {
+      refs.modalAbout.style.display = 'none';
+      toggleModalAbout();
+    } 
+  });
 })();
