@@ -21,7 +21,7 @@
   height: 60vh;
   overflow: auto;
   @media (max-width: 767px) {
-    max-width: 300px;
+    min-width: 310px;
   }
   @media (min-width: 768px) {
     width: 400px;
