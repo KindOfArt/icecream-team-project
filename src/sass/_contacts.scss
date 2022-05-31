@@ -2,6 +2,12 @@
     // background-color: #FFF5F6;
     background-image: linear-gradient(#fff 30%, #fff5f6 70%);
     padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 120px;
+    }
 }
 
 .contact-span{
@@ -20,7 +26,7 @@
 }
 
 .contacts__item{
-    max-width: 280px;
+    width: 280px;
     background-color: $main-white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -53,6 +59,9 @@
 
     font-weight: 500;
     font-size: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
     line-height: 186%;
     letter-spacing: 0.04em;
 
@@ -71,9 +80,15 @@
     }
 }
 
-.contact__place-header{
+.contact__place-header, .contact__days{
     font-weight: 500;
     font-size: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
     line-height: 186%;
 
     letter-spacing: 0.04em;
@@ -83,6 +98,15 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 166%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 183%;
+    }
 
     color: $paragraph-color;
 }
@@ -102,15 +126,19 @@
 
 .contact__days{
     display: block;
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
+    letter-spacing: 0;
 }
 
 .contact__time{
     font-weight: 500;
     font-size: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
     line-height: 186%;
     color: $hero-circle-color;
 }
@@ -120,6 +148,13 @@
 
     font-weight: 500;
     font-size: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
     line-height: 150%;
 
     color: $paragraph-color;
