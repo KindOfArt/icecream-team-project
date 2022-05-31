@@ -7,10 +7,6 @@
   display: block;
   text-align: center;
   margin: auto;
-
-  // margin: auto;
-  // margin-top: 80px;
-  // padding: auto;
 }
 p {
   margin: 0;
@@ -19,11 +15,21 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  /* identical to box height */
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
   font-family: Titan One;
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    padding-bottom: 18px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    padding-bottom: 16px;
+  }
 }
 .products__header {
   margin: auto;
@@ -35,39 +41,42 @@ p {
   text-transform: uppercase;
   color: #d41443;
   font-family: Titan One;
+  @media (min-width: 768px) {
+    // display: flex;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  @media (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
 }
+
 .products__list {
-  display: block;
+  display: flex;
   padding: 0;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    // display: flex;
+    gap: 16px;
+    flex-direction: row;
+  }
+  @media (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 .non-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  // @media (min-width: 768px) {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-  // @media (min-width: 1200px) {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
 }
 .products__link {
-  display: block;
+  flex-basis: calc((100% - 32px) / 3);
   position: relative;
-  //   background-color: #ffb8ca;
-  //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  //     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
-
-  // width: 280px;
+  padding-bottom: 40px;
   height: 100%;
-  //   left: 20px;
-  // margin: auto;
-  &:not(:last-child){
-    margin-bottom: 30px;
-  }
   margin-top: 150px;
   // &:not(:last-child) {
   //   margin-bottom: 30px;
@@ -81,13 +90,6 @@ p {
   &--green {
     background-color: #c2e297;
   }
-  // @media (min-width: 768px) {
-  //   width: 224px;
-  // }
-  // @media (min-width: 1200px) {
-  //   width: 395px;
-  //   margin-right: 32px;
-  // }
 }
 
 .products__depiction {
@@ -106,6 +108,10 @@ p {
   color: #ffffff;
   margin-bottom: 32px;
   font-family: Titan One;
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
   &::after {
     content: ' • • • ';
 
@@ -130,16 +136,25 @@ p {
   margin-left: 40px;
   margin-right: 40px;
   font-family: DM Sans;
+  @media (min-width: 768px) {
+    // display: flex;
+    line-height: 1.9;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
 h3 {
   margin: auto;
 }
 
 .products__button {
-  width: 40px;
-  height: 40px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  margin: 0 auto;
   border: none;
   width: 40px;
   height: 40px;
@@ -150,8 +165,8 @@ h3 {
   -o-transition: all 0.8s ease-in-out;
   -ms-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
-  margin-bottom: 40px;
-  &:hover {
+  // margin-bottom: 40px;
+  &:active {
     // background-color: #ffb8ca;
     -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
@@ -159,18 +174,19 @@ h3 {
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
   }
-  &--beige:hover {
+  &--beige:focus {
     background-color: #f0d1a5;
   }
-  &--pink:hover {
+  &--pink:focus {
     background-color: #ffb8ca;
   }
-  &--green:hover {
+  &--green:focus {
     background-color: #c2e297;
   }
 }
 .products__icon {
-  padding-top: 2px;
+  // padding-top: 2px;
+  display: block;
   fill: #d41443;
 }
 .products__image {
@@ -179,10 +195,14 @@ h3 {
   position: absolute;
   top: -30%;
   height: auto;
-  // @media (min-width: 768px) {
-  //   top: -20%;
-  // }
-  // @media (min-width: 1200px) {
-  //   top: -20%;
-  // }
+  @media (min-width: 768px) {
+    top: -25%;
+  }
+  @media (min-width: 1200px) {
+    top: -30%;
+  }
+}
+
+.products__img {
+  margin: 0 auto;
 }
