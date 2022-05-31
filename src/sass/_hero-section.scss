@@ -3,7 +3,7 @@
   background-color: $hero-bg-color;
   @media (max-width: 767px) {
     position: relative;
-    padding-top: 20px;
+    padding-top: 9px;
     overflow: hidden;
   }
   // .hero__flex-bg-thumb
@@ -19,6 +19,7 @@
   // .hero__left-side
 
   &__left-side {
+    overflow: hidden;
     @media (max-width: 767px) {
       position: absolute;
       left: 0;
@@ -233,17 +234,8 @@
         animation-name: bit;
         animation-duration: 1500ms;
         animation-timing-function: linear;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-direction: alternate;
-
-        @keyframes bit {
-          from {
-            transform: scale(1.03);
-          }
-          to {
-            transform: scale(0.9);
-          }
-        }
       }
       @media (max-width: 767px) {
         width: 346px;
@@ -263,10 +255,9 @@
   }
   // .hero__main-img
   &__main-img {
-    position: relative;
     z-index: 1;
     @media (max-width: 767px) {
-      animation-name: iceCreamShow;
+      animation-name: showDown;
       animation-duration: 2000ms;
       animation-timing-function: ease;
       animation-direction: alternate;
@@ -279,10 +270,11 @@
     display: none;
     @media (min-width: 768px) {
       display: flex;
+      align-self: flex-end;
+      flex-direction: column;
+      text-align: right;
+      overflow: hidden;
     }
-    align-self: flex-end;
-    flex-direction: column;
-    text-align: right;
   }
 
   // .hero__total-stores
@@ -329,7 +321,7 @@
   &__right-site-img {
     z-index: 1;
     @media (min-width: 768px) {
-      animation-name: soTasty;
+      animation-name: showDown;
       animation-duration: 2000ms;
       animation-timing-function: ease;
       animation-direction: alternate;
@@ -399,6 +391,17 @@
     }
   }
 }
+@keyframes bit {
+  from {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @keyframes bubble {
   0% {
     opacity: 0;
@@ -409,7 +412,7 @@
     transform: translateX(0);
   }
 }
-@keyframes iceCreamShow {
+@keyframes showDown {
   0% {
     transform: translateX(100%);
   }
@@ -420,14 +423,6 @@
 @keyframes milk {
   0% {
     transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes soTasty {
-  0% {
-    transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
