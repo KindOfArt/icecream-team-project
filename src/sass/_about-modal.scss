@@ -13,7 +13,8 @@
   height: 100%; /* Full height */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  transition: 250ms linear;
+  opacity: 1;
+  transition: transform 250ms linear;
 }
 
 /* Modal Content */
@@ -52,22 +53,21 @@
 /* The Close Button */
 .about-read-more__close {
   position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 50px;
-  height: 50px;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $main-white;
   cursor: pointer;
   color: $hero-bg-color;
   fill: currentColor;
-  transition: 250ms linear;
+  transition: fill 250ms linear, border-color 250ms linear;
   &:hover,
   &:focus {
-    top: 15px;
-    right: 15px;
     fill: $first-accent-color;
+    border-color: $first-accent-color;
   }
 }
 .about-read-more__p {
@@ -79,10 +79,4 @@
   line-height: 31px;
   color: $main-black;
   padding: 2px 30px;
-  transition: 250ms linear;
-  &:hover,
-  &:focus {
-    color: $first-accent-color;
-    transform: scale(1.1);
-  }
 }

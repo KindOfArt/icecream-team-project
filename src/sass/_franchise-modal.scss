@@ -14,7 +14,7 @@
   overflow-y: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  transition: 250ms linear;
+  transition: transition 250ms linear;
 }
 
 /* Modal Content */
@@ -40,34 +40,32 @@
   }
   @media screen and (min-device-width: 768px) {
     width: 614px;
-  padding: 40px 60px;
-
+    padding: 40px 60px;
   }
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* The Close Button */
 .franchise__close {
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 15px;
+  top: 15px;
   /* Button in the middle of franchise__div if needed */
   // @media screen and (max-device-width: 480px) {
   //   top: 50%;
   // }
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $main-white;
   cursor: pointer;
   color: $hero-bg-color;
   fill: currentColor;
-  transition: 250ms linear;
+  transition: fill 250ms linear border-color 250ms linear;
   &:hover,
   &:focus {
-    top: 15px;
-    right: 15px;
     fill: $first-accent-color;
+    border-color: $first-accent-color;
   }
 }
 .franchise__p {
@@ -77,12 +75,7 @@
   font-weight: 500;
   font-size: 10px;
   line-height: 31px;
-  color: $hero-bg-color;
-  &:hover,
-  &:focus {
-    color: $first-accent-color;
-    transform: scale(1.1);
-  }
+  color: $main-black;
 }
 
 .franchise__form {

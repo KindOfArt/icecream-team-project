@@ -13,10 +13,10 @@
     refs.modalAbout.classList.toggle('about-is-hidden');
   }
   // on click anywhere NOT the window close modal
-  window.addEventListener('click', event => {
-    if (event.target === refs.modalAbout) {
-      refs.modalAbout.style.display = 'none';
-      toggleModalAbout();
-    } 
-  });
+  // window.addEventListener('click', event => {
+  //   if (event.target == refs.modalAbout) {
+  //     refs.modalAbout.style.opacity = 0;
+  //     toggleModalAbout();
+  //   }
+  // });
 })();
