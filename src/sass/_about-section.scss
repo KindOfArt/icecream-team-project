@@ -12,9 +12,25 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
-
   }
-}
+
+  @include tablet {
+      padding-top: 20px;
+  }
+
+  @include desktop {
+    padding-top: 60px;
+    background-image: url(../images/about/desktop/drop-of-milk-desk.png);
+    background-position: 0% 79%;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about/desktop/drop-of-milk-desk@2x.png);
+    }  
+  } 
+}  
+  
 
 .about__container {
  display: flex;
@@ -24,22 +40,23 @@
  }
 }
 
-// ========
-
 .about__label {
   display: block;
   margin-bottom: 15px;
 
-
   font-family: Titan One;
   @include font(400, 18px, 1.17, 0.04em);
-  // font-size: 18px;
-  // line-height: 21px;
-  // letter-spacing: 1.17;
-
   color: $hero-circle-color;
   text-align: center;
   text-transform: uppercase;
+
+  @include tablet {
+    @include font(400, 26px, 1.15, 0.04em);
+  }
+
+  @include desktop {
+    @include font(400, 30px, 1.13, 0.04em);
+  }
 }
 
 .about__title {
@@ -48,51 +65,80 @@
 
   font-family: Titan One;
   @include font(400, 34px, 1.15, 0.04em);
-  // font-size: 34px;
-  // line-height: 39px;
-  // letter-spacing: 1.15;
+  
 
   color: $first-accent-color;
   text-align: center;
   text-transform: uppercase;
+
+  @include tablet {
+    margin-bottom: 40px;
+    @include font(400, 48px, 1.15, 0.04em);
+  }
+
+  @include desktop {
+    margin-bottom: 80px;
+    @include font(400, 58px, 1.13, 0.04em);
+  }
+}
+
+.about__wrapper {
+  @include tablet {
+    display: flex;
+  }
 }
 
 .about__img {
   margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 32px;
+    min-width: 336px;
+  }
+  @include desktop {
+    margin-right: 140px;
+    // min-width: 501px;
+  }
+
 }
 
 .about__list {
   max-width: 220px;
-  // margin: 0 auto;
+  @include tablet {
+    max-width: 334px;
+  }
+  @include desktop {
+    max-width: 463px;
+  }
 }
 
 .about__item {
-  margin-bottom: 20px;
-
-
+  margin-bottom: 20px;  
   font-family: DM Sans;
   @include font(500, 12px, 1.62, 0);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 19px;
-  // letter-spacing: 1.6;
 
+  @include tablet {
+    @include font(500, 14px, 1.76, 0.04)
+  }
+
+  @include desktop {
+    @include font(500, 16px, 1.76, 0.04)
+  }
 }
+
 .about__item:not(:first-child) {
   color: $paragraph-color;
 }
+
 .about__btn {
   display: block;
   width: 176px;
   height: 44px;
+  margin-top: 20px;
 
   font-family: inherit;
   color: $first-accent-color;
   @include font(700, 14px, 1.29, 0.04em);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 18px;
-  // letter-spacing: 1.29;
 
   background-color: $main-white;
   border-radius: 22px;
@@ -103,5 +149,9 @@
   &:focus,
   &:hover {
     background-color: #ecebeb;
+  }
+
+  @include tablet {
+    margin-top: 40px;
   }
 }
