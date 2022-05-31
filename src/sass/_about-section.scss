@@ -21,7 +21,7 @@
   @include desktop {
     padding-top: 60px;
     background-image: url(../images/about/desktop/drop-of-milk-desk.png);
-    background-position: 0% 79%;
+    background-position: 100% 100%;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -85,6 +85,14 @@
 .about__wrapper {
   @include tablet {
     display: flex;
+  }
+}
+
+.about-wrapper-btn {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
