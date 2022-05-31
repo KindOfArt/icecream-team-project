@@ -16,6 +16,7 @@
     refs.modal.classList.toggle('header-is-hidden');
     if (!refs.modal.classList.contains('header-is-hidden')) {
       refs.mobileMenu.classList.remove('is-open');
+      document.body.style.overflow = null;
     }
   }
   console.log(refs.mobileMenu);
