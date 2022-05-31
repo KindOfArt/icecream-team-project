@@ -170,8 +170,8 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  border: 1px solid $first-accent-color;
-  background-color: inherit;
+  // border: 1px solid $first-accent-color;
+  background-color: transparent;
 
   &:hover {
     background-color: $bg-gradient-color;
