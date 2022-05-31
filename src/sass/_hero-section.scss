@@ -241,7 +241,7 @@
       @media (min-width: 768px) {
         animation-name: bit;
         animation-duration: 1500ms;
-        animation-timing-function: linear;
+        animation-timing-function: cubic-bezier(0, 0.56, 1, 0.3);
         animation-iteration-count: 1;
         animation-direction: alternate;
       }
@@ -403,9 +403,9 @@
   from {
     transform: scale(0);
   }
-  50% {
-    transform: scale(1.1);
-  }
+  // 50% {
+  //   transform: scale(1.1);
+  // }
   to {
     transform: scale(1);
   }
