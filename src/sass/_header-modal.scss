@@ -20,15 +20,11 @@
   padding: 20px;
   height: calc(100vh - 20px);
   overflow: auto;
-  @media (min-width: 767px) {
-    min-width: 100%;
+  @media (max-width: 767px) {
+    min-width: 70%;
   }
   @media (min-width: 768px) {
-    max-width: 768px;
-  }
-  @media (min-width: 1280px) {
-    min-height: auto;
-    min-width: 400px;
+    width: 400px;
   }
 
   top: 50%;
