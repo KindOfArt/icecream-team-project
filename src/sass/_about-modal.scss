@@ -26,14 +26,14 @@
   border-radius: 24px;
   background-color: $main-white;
   border: 1px solid $border-color;
-  background-image: url(../images/about/mobile/cow-mob.png);
-  background-repeat: no-repeat;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/about/mobile/cow-mob@2x.png);
-    background-size: 280px 279px;
-  }
+  // background-image: url(../images/about/mobile/cow-mob.png);
+  // background-repeat: no-repeat;
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/about/mobile/cow-mob@2x.png);
+  //   background-size: 280px 279px;
+  // }
   @media screen and (max-device-width: 479px) {
     width: 80%;
     height: 100%;
@@ -77,7 +77,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 31px;
-  color: $hero-bg-color;
+  color: $main-black;
   padding: 2px 30px;
   transition: 250ms linear;
   &:hover,

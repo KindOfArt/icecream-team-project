@@ -18,10 +18,10 @@
 .modal {
   position: absolute;
   padding: 20px;
-  height: calc(100vh - 20px);
+  height: 60vh;
   overflow: auto;
   @media (max-width: 767px) {
-    min-width: 80%;
+    max-width: 300px;
   }
   @media (min-width: 768px) {
     width: 400px;
