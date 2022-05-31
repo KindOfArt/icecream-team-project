@@ -3,31 +3,53 @@
     <span class="about__label">tradition and love</span>
     <h2 class="about__title">how it’s made?</h2>
 
-    <img
-      class="about__img"
-      srcset="
-        ./images/about/mobile/cow-mob.png    1x,
-        ./images/about/mobile/cow-mob@2x.png 2x
-      "
-      src="./images/about/mobile/cow-mob.png"
-      alt="cow and jug of milk"
-    />
-    <ul class="about__list null-list">
-      <li class="about__item">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-        justo fringilla.
-      </li>
-      <li class="about__item">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt.
-      </li>
-      <li class="about__item">Aliquam erat volutpat. Aenean accumsan.</li>
-    </ul>
-    <button type="button" class="about__btn" data-modal-open-about>
-      Read more
-    </button>
+   <div class="about__wrapper">
+       <picture>
+           <source 
+                srcset="
+                    ./images/about/desktop/cow-desk.png 1x,
+                    ./images/about/desktop/cow-desk@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+           />
+           <source 
+                srcset="
+                    ./images/about/tablet/cow-tab.png 1x,
+                    ./images/about/tablet/cow-tab@2x.png 2x
+                "
+                media="(min-width: 768px)"
+           />
+           <source 
+                srcset="
+                    ./images/about/mobile/cow-mob.png 1x,
+                    ./images/about/mobile/cow-mob@2x.png 2x
+                "
+                media="(min-width: 480px)"
+           />
+           <img
+                class="about__img"
+                src="./images/about/mobile/cow-mob.png"
+                alt="cow and jug of milk"  
+            />
+       </picture>
+       
+        <div class="about-wrapper-btn">
+            <ul class="about__list null-list">
+                <li class="about__item">
+                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+                </li>
+                <li class="about__item">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+                    suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.
+                </li>
+                <li class="about__item">Aliquam erat volutpat. Aenean accumsan.</li>
+            </ul>
+            <button type="button" class="about__btn" data-modal-open-about>
+            Read more
+            </button>
+        </div>
+   </div>
   </div>
 </section>
