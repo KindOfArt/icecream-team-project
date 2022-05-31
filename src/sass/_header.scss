@@ -84,7 +84,7 @@
   cursor: pointer;
   background-color: transparent;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 
@@ -117,7 +117,7 @@
 .header__list {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
   }
 }
