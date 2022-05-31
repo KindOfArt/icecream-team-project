@@ -1,152 +1,152 @@
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    padding: 12px 40px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 40px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 
-    border: 0;
+  border: 0;
 
-    border-radius: 22px;
+  border-radius: 22px;
 
-    color: $first-accent-color;
-    background-color: $main-white;
+  color: $first-accent-color;
+  background-color: $main-white;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover,
-    &:focus {
-        background-color: #ECEBEB;
-    }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .header-btn__icon,
 .menu-btn__icon {
-    width: 1em;
-    height: 1em;
-    fill: $first-accent-color;
+  width: 1em;
+  height: 1em;
+  fill: $first-accent-color;
 }
 
 /////////////////////////////////////////////
 
 .header {
-    background-color: $hero-bg-color ;
+  padding-bottom: 6px;
+  background-color: $hero-bg-color;
 }
 
-
 .header__body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding-top: 8px;
+  padding-top: 8px;
 
-    @media screen and (min-width: 768px) {
-        padding-top: 32px;
-    }
-
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
 }
 
 .header__logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .buttons-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  order: 2;
 }
 
 .menu__line {
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 100%;
-    height: 2px;
-    background-color: $first-accent-color;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: $first-accent-color;
 }
 
 .menu__open-btn {
-    position: relative;
-    width: 20px;
-    height: 12px;
+  position: relative;
+  width: 20px;
+  height: 12px;
 
-    padding: 0;
+  padding: 0;
 
-    border: 0;
-    cursor: pointer;
-    background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
 
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        // z-index: 5;
-        width: 100%;
-        height: 2px;
-        background-color: $first-accent-color;
-    }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    // z-index: 5;
+    width: 100%;
+    height: 2px;
+    background-color: $first-accent-color;
+  }
 
-    &::before {
-        top: 0;
-    }
+  &::before {
+    top: 0;
+  }
 
-    &::after {
-        bottom: 0;
-    }
+  &::after {
+    bottom: 0;
+  }
 }
 
 .menu__icon-open {
-    background-size: cover;
+  background-size: cover;
 }
-
+.header__nav {
+  z-index: 2;
+}
 .header__list {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .header__item:not(:last-child) {
-    margin-right: 35px;
+  margin-right: 35px;
 }
 
 .header__link {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.28;
-    color: $main-white;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $main-white;
 
-    &:hover {
-        color: $first-accent-color;
-    }
+  &:hover {
+    color: $first-accent-color;
+  }
 
-    &:focus {
-        color: $first-accent-color;
-    }
+  &:focus {
+    color: $first-accent-color;
+  }
 }
 
 .header-btn {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

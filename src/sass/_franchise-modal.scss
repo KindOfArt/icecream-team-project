@@ -4,7 +4,6 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -16,10 +15,13 @@
 
 /* Modal Content */
 .franchise__div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 24px;
   background-color: $main-white;
-  margin: auto;
-  padding: 20px;
+  padding: 60px 30px;
   border: 1px solid $border-color;
   @media screen and (max-device-width: 1279px) {
     width: 80%;
@@ -34,38 +36,48 @@
 /* Add Animation */
 @keyframes animatetop {
   from {
-    top: -300px;
     opacity: 0;
   }
   to {
-    top: 0;
     opacity: 1;
   }
 }
 /* The Close Button */
 .franchise__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 0;
+  background-color: $main-white;
+  cursor: pointer;
   color: $hero-circle-color;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  transition: color 250ms linear;
+  fill: currentColor;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .franchise__close:hover,
 .franchise__close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  color: $first-accent-color;
+  top: 15px;
+  right: 15px;
+
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover,
+  &:focus {
+    fill: $first-accent-color;
+  }
 }
 
 .franchise__p {
   white-space: pre-line;
   font-family: 'DM Sans';
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 31px;
-  color: $hero-circle-color;
+  color: $first-accent-color;
   padding: 2px 30px;
 }
 
@@ -78,11 +90,10 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 31px;
-  color: $hero-circle-color;
+  color: $first-accent-color;
 }
 
 .franchise__input {
-  border: 2px solid $hero-circle-color;
   padding-left: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -91,11 +102,12 @@
   border-radius: 10px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline-width: 0;
+  border: 2px solid $first-accent-color;
 }
 
 .franchise__input:focus,
 .franchise__input:hover {
-  border: 2px solid $first-accent-color;
+  border: 2px solid $hero-circle-color;
 }
 
 .franchise__small {

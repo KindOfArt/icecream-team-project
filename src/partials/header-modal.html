@@ -1,37 +1,62 @@
-
-<div class="header-backdrop header-is-hidden" header-data-modal>
-    <div class="modal">
-      <button class="modal__button" header-data-modal-close>
-        <svg class="modal__icon" width="18" height="18">
-          <use href="./images/symbol-defs.svg#icon-close_40px"></use>
-        </svg>
-      </button>
-      <form class="modal-form">
-        <p class="modal-form__title">Order Now</p>
-        <ul class="modal-form__list">
-          <li class="modal-form__item">
-            <label for="user-name" class="modal-form__label"></label>
-            <input type="text" name="user-name" id="user-name" class="modal-form__input" placeholder="Name">
-          </li>
-          <li class="modal-form__item">
-            <label for="user-tel" class="modal-form__label">
-
-            </label>
-            <input type="tel" name="user-tel" id="user-tel" class="modal-form__input" placeholder="Phone">
-          </li>
-          <li class="modal-form__item">
-            <label for="user-email" class="modal-form__label"></label>
-            <input type="email" name="user-email" id="user-email" class="modal-form__input" placeholder="Email">
-          </li>
-          <li class="modal-form__item">
-            <label for="user-company" class="modal-form__label"></label>
-            <input type="text" name="user-company" id="user-company" class="modal-form__input" placeholder="Company">
-          </li>
-        </ul>
-        <label class="modal-form__label modal-form__comment">
-          <textarea name="form-comment" class="modal-form__text" placeholder="Comments"></textarea>
-        </label>
-        <button type="submit" class="btn-light btn-main">Submit</button>
-      </form>
+<div class="header-backdrop header-is-hidden" data-header-modal>
+  <div class="modal">
+    <button class="modal__button" data-header-modal-close>
+      <svg class="modal__icon" width="18" height="18">
+        <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <form class="modal-form">
+      <p class="modal-form__title">Order Now</p>
+      <ul class="modal-form__list">
+        <li class="modal-form__item">
+          <label for="user-name" class="modal-form__label"></label>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="modal-form__input"
+            placeholder="Name"
+          />
+        </li>
+        <li class="modal-form__item">
+          <label for="user-tel" class="modal-form__label"> </label>
+          <input
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            class="modal-form__input"
+            placeholder="Phone"
+          />
+        </li>
+        <li class="modal-form__item">
+          <label for="user-email" class="modal-form__label"></label>
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            class="modal-form__input"
+            placeholder="Email"
+          />
+        </li>
+        <li class="modal-form__item">
+          <label for="user-company" class="modal-form__label"></label>
+          <input
+            type="text"
+            name="user-company"
+            id="user-company"
+            class="modal-form__input"
+            placeholder="Company"
+          />
+        </li>
+      </ul>
+      <label class="modal-form__label modal-form__comment">
+        <textarea
+          name="form-comment"
+          class="modal-form__text"
+          placeholder="Comments"
+        ></textarea>
+      </label>
+      <button type="submit" class="btn-light btn-main">Submit</button>
+    </form>
   </div>
-  </div>
+</div>

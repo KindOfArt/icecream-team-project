@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice Cream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="shortcut icon" type="image/avif" href="/src/images/favicon.avif" />
+    <link
+      rel="shortcut icon"
+      type="image/avif"
+      href="/src/images/favicon.avif"
+    />
     <script type="module" src="./index.js"></script>
   </head>
 
   <body>
+    <script
+      type="module"
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-  <include src="./partials/header.html"/></include>
+    <include src="./partials/header.html"></include>
+
     <main>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"/></include>
-      <include src="./partials/about-section.html" /></include>
-      <include src="./partials/advantages.html" /></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about-section.html"></include>
+      <include src="./partials/advantages.html"></include>
       <include src="./partials/gallery.html"></include>
       <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
     </main>
-    <include src="./partials/footer.html"></include>
-      <include src="./partials/our-locations-modal.html"></include>
- <include src="./partials/header-modal.html"></include>
-    <script type="module" src="./JS/header-modal.js"></script>
-    <script type="module" src="./JS/location-modal.js"></script>
-  </body>
 
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/our-locations-modal.html"></include>
+    <include src="./partials/header-modal.html"></include>
+    <include src="./partials/about-modal.html"></include>
+    <include src="./partials/franchise-modal.html"></include>
+    <include src="./partials/upward.html"></include>
+
+    <script type="module" src="./JS/header-mod.js"></script>
+    <script type="module" src="./JS/location-mod.js"></script>
+    <script type="module" src="./JS/mob-menu.js"></script>
+    <script type="module" src="./JS/about-modal.js"></script>
+    <script type="module" src="./JS/franchise-modal.js"></script>
+    <script type="module" src="./JS/button-up.js"></script>
+  </body>
 </html>

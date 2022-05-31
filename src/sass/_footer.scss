@@ -1,10 +1,23 @@
 .section-footer {
     background-color: $bg-gradient-color;
-    padding: 20px 0px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 8px;
+    }
 }
 
 .footer__wrap {
     padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 60px;
+    }
 }
 
 .fotter__first-text {
@@ -15,6 +28,22 @@
     color: $hero-circle-color;
     max-width: 232px;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        max-width: 340px;
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+        max-width: 472px;
+
+    }
 }
 
 .footer__seond-text {
@@ -26,6 +55,19 @@
     color: $first-accent-color;
     max-width: 200px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+        max-width: 340px;
+        margin-bottom: 0px
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        line-height: 1.15;
+        max-width: 100%;
+    }
 }
 
 .footer__list {
@@ -36,6 +78,14 @@
 
 .footer__item+.footer__item {
     margin-left: 28px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 24px;
+    }
 }
 
 .footer__soc-link {
@@ -55,10 +105,21 @@
     &:focus {
         background-color: $first-accent-color;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 34px;
+        height: 34px;
+    }
+
 }
 
 .footer__soc-icon {
     fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .footer__contact {
@@ -67,6 +128,15 @@
     line-height: 1.86;
     text-align: right;
     color: $main-black;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
 }
 
 .footer__copyright {
@@ -80,6 +150,12 @@
     &+& {
         margin-top: 0px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 8px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
 }
 
 .footer__tell {
@@ -89,4 +165,12 @@
 .footer__border {
     display: block;
     border-bottom: 1px solid $border-color;
+}
+
+.footer__copyright-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
 }
