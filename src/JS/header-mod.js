@@ -4,7 +4,7 @@
     openModalMenuBtn: document.querySelector('[data-menu-modal-form-open]'),
     closeModalBtn: document.querySelector('[data-header-modal-close]'),
     modal: document.querySelector('[data-header-modal]'),
-    menu: document.getElementById('mobile-menu'),
+    mobileMenu: document.getElementById('mobile-menu'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -14,6 +14,9 @@
   function toggleModal() {
     document.body.classList.toggle('modal-open');
     refs.modal.classList.toggle('header-is-hidden');
+    if (!refs.modal.classList.contains('header-is-hidden')) {
+      refs.mobileMenu.classList.remove('is-open');
+    }
   }
   console.log(refs.mobileMenu);
 })();
