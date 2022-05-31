@@ -24,7 +24,7 @@ p {
     line-height: 1.15;
     padding-bottom: 18px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
     letter-spacing: 0.04em;
@@ -46,7 +46,7 @@ p {
     font-size: 48px;
     line-height: 1.14;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
@@ -61,13 +61,15 @@ p {
     // display: flex;
     gap: 16px;
     flex-direction: row;
+    margin: auto;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     gap: 32px;
+    margin-top: 110px;
   }
 }
 .non-list {
-  margin: 0;
+  // margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -96,6 +98,13 @@ p {
   padding-top: 160px;
   // padding-bottom: 40px;
   text-align: center;
+  @media (min-width: 768px) {
+    // display: flex;
+    padding-top: 118px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 144px;
+  }
 }
 .products__name {
   display: block;
@@ -108,9 +117,10 @@ p {
   color: #ffffff;
   margin-bottom: 32px;
   font-family: Titan One;
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
+    margin-top: 34px;
   }
   &::after {
     content: ' • • • ';
@@ -140,7 +150,7 @@ p {
     // display: flex;
     line-height: 1.9;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.75;
   }
@@ -177,7 +187,8 @@ h3 {
   &--beige:focus {
     background-color: #f0d1a5;
   }
-  &--pink:focus {
+  &--pink:focus,
+  &--pink:hover {
     background-color: #ffb8ca;
   }
   &--green:focus {
@@ -193,13 +204,13 @@ h3 {
   display: block;
   width: 100%;
   position: absolute;
-  top: -30%;
+  top: -35%;
   height: auto;
   @media (min-width: 768px) {
     top: -25%;
   }
-  @media (min-width: 1200px) {
-    top: -30%;
+  @media (min-width: 1280px) {
+    top: -50%;
   }
 }
 
