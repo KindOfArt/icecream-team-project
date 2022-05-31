@@ -3,7 +3,7 @@
   background-color: $hero-bg-color;
   @media (max-width: 767px) {
     position: relative;
-    padding-top: 20px;
+    padding-top: 9px;
     overflow: hidden;
   }
   // .hero__flex-bg-thumb
@@ -19,6 +19,7 @@
   // .hero__left-side
 
   &__left-side {
+    overflow: hidden;
     @media (max-width: 767px) {
       position: absolute;
       left: 0;
@@ -115,11 +116,18 @@
 
     color: $first-accent-color;
     background-color: $main-white;
+
+    &:hover {
+      background-color: $hover-color;
+    }
     // .hero__link--accent
 
     &--accent {
       color: $main-white;
       background-color: $first-accent-color;
+      &:hover {
+        background-color: #c7133e;
+      }
     }
   }
 
@@ -135,8 +143,15 @@
 
   // .hero__description-img
 
-  // &__description-img {
-  // }
+  &__description-img {
+    @media (min-width: 768px) {
+      animation-name: milk;
+      animation-duration: 2000ms;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+    }
+  }
 
   // .hero__description
 
@@ -201,12 +216,10 @@
     }
     @media (max-width: 767px) {
       justify-content: flex-end;
-      overflow: hidden;
     }
     display: flex;
     justify-content: center;
     flex: 1 0 auto;
-
     &::before {
       position: absolute;
       content: '';
@@ -224,11 +237,24 @@
         width: 340px;
         height: 340px;
       }
+      @media (min-width: 768px) {
+        animation-name: bit;
+        animation-duration: 1500ms;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+      }
       @media (max-width: 767px) {
         width: 346px;
         height: 346px;
         top: -9px;
         right: -100px;
+
+        animation-name: bubble;
+        animation-duration: 2000ms;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+        animation-iteration-count: 1;
       }
       border-radius: 50%;
       background-color: #ffa5ba;
@@ -236,8 +262,14 @@
   }
   // .hero__main-img
   &__main-img {
-    position: relative;
     z-index: 1;
+    @media (max-width: 767px) {
+      animation-name: showDown;
+      animation-duration: 2000ms;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+    }
   }
   // .hero__right-side
 
@@ -245,10 +277,11 @@
     display: none;
     @media (min-width: 768px) {
       display: flex;
+      align-self: flex-end;
+      flex-direction: column;
+      text-align: right;
+      overflow: hidden;
     }
-    align-self: flex-end;
-    flex-direction: column;
-    text-align: right;
   }
 
   // .hero__total-stores
@@ -293,8 +326,14 @@
   // .hero__right-site-img
 
   &__right-site-img {
-    position: relative;
     z-index: 1;
+    @media (min-width: 768px) {
+      animation-name: showDown;
+      animation-duration: 2000ms;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+    }
   }
 }
 
@@ -357,5 +396,42 @@
         background-color: $main-white;
       }
     }
+  }
+}
+@keyframes bit {
+  from {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes bubble {
+  0% {
+    opacity: 0;
+    transform: translateX(-170%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showDown {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes milk {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
