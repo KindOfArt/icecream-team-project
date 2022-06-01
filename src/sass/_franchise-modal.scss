@@ -38,6 +38,20 @@
     padding: 40px 60px;
   }
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation:bg 5s linear infinite;
+}
+@keyframes bg {
+  0% {background: $product-banana-color;}
+  3% {background: $product-green-color;}
+  20% {background: $bg-gradient-color;}
+  23% {background: $first-accent-color;}
+  40% {background: $hero-bg-color;}
+  43% {background: $paragraph-color;}
+  60% {background: #8BC34A;}
+  63% {background: #F44336;}
+  80% {background: #F44336;}
+  83% {background: #F44336;}
+  100% {background: #F44336;}
 }
 /* The Close Button */
 .franchise__close {
