@@ -19,5 +19,4 @@
       document.body.style.overflow = null;
     }
   }
-  console.log(refs.mobileMenu);
 })();
