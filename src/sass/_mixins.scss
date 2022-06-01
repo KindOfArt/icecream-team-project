@@ -22,3 +22,7 @@
         @content;
     }
 }
+
+@mixin transition {
+    transition: transform 250ms linear;
+}
