@@ -1,0 +1,117 @@
+.backdrop {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  @include tablet {
+    overflow-y: hidden;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.poduct-modal {
+  display: flex;
+  position: absolute;
+  // top: 50%;
+  top: 50vh;
+  left: 50%;
+  @media (max-width: 767px) {
+    height: 300px;
+  }
+  @media (min-width: 768px) {
+    height: 400px;
+  }
+  transform: translate(-50%, -50%);
+  border-radius: 24px;
+  padding: 40px 30px;
+  border: 1px solid transparent;
+  overflow: auto;
+  &__list {
+    display: block;
+    min-width: 220px;
+    max-width: 340px;
+  }
+  &__text {
+    position: relative;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $first-accent-color;
+    padding: 15px 15px;
+  }
+}
+
+.modal1 {
+  background-color: #ffb8ca;
+}
+
+.modal2 {
+  background-color: #f0d1a5;
+}
+
+.modal3 {
+  background-color: #c2e297;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  // background-color: $main-white;
+  cursor: pointer;
+  color: $first-accent-color;
+  fill: currentColor;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  fill: white;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+// .is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+
+.modal-close1__svg {
+  background-color: #ffb8ca;
+  border-color: #ffb8ca;
+}
+
+.modal-close2__svg {
+  background-color: #f0d1a5;
+  border-color: #f0d1a5;
+}
+
+.modal-close3__svg {
+  background-color: #c2e297;
+  border-color: #c2e297;
+}
