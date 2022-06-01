@@ -171,13 +171,10 @@ h3 {
   cursor: pointer;
 
   border-color: rgba(255, 255, 255, 0.2);
-  -moz-transition: all 0.8s ease-in-out;
-  -webkit-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  transition: all 450ms ease;
   // margin-bottom: 40px;
-  &:active {
+  &:hover,
+  &:focus {
     // background-color: #ffb8ca;
     -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
@@ -185,6 +182,8 @@ h3 {
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
   }
+
+  &--beige:hover,
   &--beige:focus {
     background-color: #f0d1a5;
   }
@@ -192,6 +191,7 @@ h3 {
   &--pink:hover {
     background-color: #ffb8ca;
   }
+  &--green:hover,
   &--green:focus {
     background-color: #c2e297;
   }

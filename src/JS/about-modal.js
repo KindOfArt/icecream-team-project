@@ -9,7 +9,7 @@
   refs.closeModalBtnAbout.addEventListener('click', toggleModalAbout);
 
   function toggleModalAbout() {
-    document.body.classList.toggle('about-read-more');
+    document.body.classList.toggle('modal-open');
     refs.modalAbout.classList.toggle('about-is-hidden');
   }
   // on click anywhere NOT the window close modal

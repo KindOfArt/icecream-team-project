@@ -18,6 +18,7 @@
   background-color: $main-white;
 
   cursor: pointer;
+  transition: background-color 250ms ease;
 
   &:hover,
   &:focus {
@@ -136,10 +137,9 @@
   line-height: 1.28;
   color: $main-white;
 
-  &:hover {
-    color: $first-accent-color;
-  }
+  transition: color 250ms ease;
 
+  &:hover,
   &:focus {
     color: $first-accent-color;
   }
