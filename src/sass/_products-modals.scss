@@ -15,7 +15,7 @@
     visibility: hidden;
   }
   @include tablet {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 }
 
@@ -31,11 +31,12 @@
   // top: 50%;
   top: 50vh;
   left: 50%;
-  @media (max-width: 767px) {
-    height: 300px;
-  }
-  @media (min-width: 768px) {
+  height: 600px;
+  @include tablet {
     height: 500px;
+  }
+  @include desktop {
+    height: 600px;
   }
   transform: translate(-50%, -50%);
   border-radius: 24px;
@@ -43,7 +44,10 @@
   border: 1px solid transparent;
   overflow: auto;
   &__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 220px;
     max-width: 340px;
   }
@@ -56,6 +60,12 @@
     line-height: 1.5;
     color: $first-accent-color;
     padding: 15px 15px;
+  }
+}
+
+.poduct-modal__text {
+  @include desktop {
+    font-size: 16px;
   }
 }
 
