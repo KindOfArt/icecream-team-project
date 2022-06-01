@@ -1,24 +1,26 @@
-// Get the modal
-const modal = document.getElementById('modalFranchise');
+(() => {
+  const refs = {
+    openModalBtnFranchise: document.querySelector(
+      '[data-modal-open-franchise]'
+    ),
+    closeModalBtnFranchise: document.querySelector(
+      '[data-modal-close-franchise]'
+    ),
+    modalFranchise: document.querySelector('[data-modal-franchise]'),
+  };
 
-// Get the button that opens the modal
-const btn = document.getElementById('btnFranchise');
+  refs.openModalBtnFranchise.addEventListener('click', toggleModalFranchise);
+  refs.closeModalBtnFranchise.addEventListener('click', toggleModalFranchise);
 
-// Get the <span> element that closes the modal
-const span = document.querySelector('.franchise__close');
-const btnFrsbm = document.querySelector('.button__franchise-submit');
-
-// When the user clicks the button, open the modal
-btn.addEventListener('click', () => (modal.style.display = 'block'));
-
-// When the user clicks on <span> (x), close the modal
-span.addEventListener('click', () => (modal.style.display = 'none'));
-// When the user clicks on <button__franchise-submit>, close the modal
-btnFrsbm.addEventListener('click', () => (modal.style.display = 'none'));
-
-// When the user clicks anywhere outside of the modal, close it
-window.addEventListener('click', event => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
+  function toggleModalFranchise() {
+    document.body.classList.toggle('franchise');
+    refs.modalFranchise.classList.toggle('franchise-is-hidden');
   }
-});
+  // on click anywhere NOT the window close modal
+  // window.addEventListener('click', event => {
+  //   if (event.target === refs.modalFranchise) {
+  //     refs.modalFranchise.style.display = 'none';
+  //     toggleModalFranchise();
+  //   }
+  // });
+})();

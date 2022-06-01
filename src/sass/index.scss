@@ -1,6 +1,6 @@
 @import './common';
 
-@import './color-vars';
+@import './variables';
 @import './fonts';
 @import './visually-hidden';
 @import './mixins';
@@ -21,10 +21,7 @@
 @import './customer-reviews';
 @import './contacts';
 @import './footer';
-@import './our-locations-backdrop';
 @import './our-locations-modal';
-@import './our-locations-map';
-@import './header-backdrop';
 @import './header-modal';
 @import './products-modals';
 @import './about-modal';

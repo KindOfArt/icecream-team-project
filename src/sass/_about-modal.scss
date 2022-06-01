@@ -6,15 +6,15 @@
 /* The Modal (background) */
 .about-read-more {
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  // overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 1;
+  transition: transform 250ms linear;
 }
 
 /* Modal Content */
@@ -23,71 +23,60 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  // overflow-y: auto; /* Enable scroll if needed */
   border-radius: 24px;
   background-color: $main-white;
-  padding: 60px 40px;
   border: 1px solid $border-color;
-  background-image: url(../images/about/mobile/cow-mob.png);
-  background-repeat: no-repeat;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/about/mobile/cow-mob@2x.png);
-    background-size: 280px 279px;
-  }
-  @media screen and (max-device-width: 1279px) {
+  // background-image: url(../images/about/mobile/cow-mob.png);
+  // background-repeat: no-repeat;
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/about/mobile/cow-mob@2x.png);
+  //   background-size: 280px 279px;
+  // }
+  @media screen and (max-device-width: 479px) {
     width: 80%;
+    height: 100%;
+    padding: 30px 20px;
   }
-  @media screen and (min-device-width: 1280px) {
-    width: 500px;
+  @media screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    width: 80%;
+    padding: 50px 30px;
+  }
+  @media screen and (min-device-width: 768px) {
+    width: 614px;
+    padding: 60px 40px;
   }
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation-name: animatetop;
-  animation-duration: 500ms;
-}
-/* Add Animation */
-@keyframes animatetop {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 /* The Close Button */
 .about-read-more__close {
   position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 50px;
-  height: 50px;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $main-white;
   cursor: pointer;
-  color: $hero-circle-color;
+  color: $hero-bg-color;
   fill: currentColor;
-  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.about-read-more__close:hover,
-.about-read-more__close:focus {
-  top: 15px;
-  right: 15px;
-
-  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
+  transition: fill 250ms linear, border-color 250ms linear;
   &:hover,
   &:focus {
     fill: $first-accent-color;
+    border-color: $first-accent-color;
   }
 }
-
 .about-read-more__p {
+  height: 100%;
+  overflow-y: auto;
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 31px;
-  color: $first-accent-color;
+  color: $main-black;
   padding: 2px 30px;
 }
