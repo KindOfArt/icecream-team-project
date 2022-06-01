@@ -74,6 +74,13 @@ p {
   list-style: none;
 }
 .products__link {
+  @include transition;
+}
+.products__link:hover,
+.products__link:focus {
+  transform: scale(1.1);
+}
+.products__link {
   flex-basis: calc((100% - 32px) / 3);
   position: relative;
   border-radius: 24px;

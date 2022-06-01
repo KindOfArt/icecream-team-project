@@ -2,7 +2,20 @@
   padding-top: 40px;
 
   background-color: $bg-gradient-color;
-  background-image: url(../images/about/mobile/drop-of-milk-mob.png);
+  animation: milk-mob-x 5s infinite;
+  @keyframes milk-mob-x {
+    0%,
+    100% {
+      background-image: url(../images/about/mobile/drop-of-milk-minus-5-degree-mob.png);
+    }
+    33% {
+      background-image: url(../images/about/mobile/drop-of-milk-mob.png);
+    }
+    66% {
+      background-image: url(../images/about/mobile/drop-of-milk-plus-5-degree-mob.png);
+    }
+  }
+  // background-image: url(../images/about/mobile/drop-of-milk-mob.png);
   background-repeat: no-repeat;
   background-position: 0% 79%;
   background-size: contain;
@@ -10,7 +23,19 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
+    animation: milk-mob-2x 5s infinite;
+    @keyframes milk-mob-2x {
+      0%,
+      100% {
+        background-image: url(../images/about/mobile/drop-of-milk-minus-5-degree-mob@2x.png);
+      }
+      33% {
+        background-image: url(../images/about/mobile/drop-of-milk-mob@2x.png);
+      }
+      66% {
+        background-image: url(../images/about/mobile/drop-of-milk-plus-5-degree-mob@2x.png);
+      }
+    }
   }
 
   @include tablet {
@@ -19,13 +44,37 @@
 
   @include desktop {
     padding-top: 60px;
-    background-image: url(../images/about/desktop/drop-of-milk-desk.png);
+    animation: milk-desktop-x 5s infinite;
+    @keyframes milk-desktop-x {
+      0%,
+      100% {
+        background-image: url(../images/about/desktop/drop-of-milk-minus-5-degree-desk.png);
+      }
+      33% {
+        background-image: url(../images/about/desktop/drop-of-milk-desk.png);
+      }
+      66% {
+        background-image: url(../images/about/desktop/drop-of-milk-plus-5-degree-desk.png);
+      }
+    }
     background-position: 100% 100%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/about/desktop/drop-of-milk-desk@2x.png);
+      animation: milk-desktop-2x 5s infinite;
+      @keyframes milk-desktop-2x {
+        0%,
+        100% {
+          background-image: url(../images/about/desktop/drop-of-milk-minus-5-degree-desk@2x.png);
+        }
+        33% {
+          background-image: url(../images/about/desktop/drop-of-milk-desk@2x.png);
+        }
+        66% {
+          background-image: url(../images/about/desktop/drop-of-milk-plus-5-degree-desk@2x.png);
+        }
+      }
     }
   }
 }
@@ -91,7 +140,13 @@
     justify-content: center;
   }
 }
-
+.about__img {
+  @include transition;
+}
+.about__img:hover,
+.about__img:focus {
+  transform: scale(1.1);
+}
 .about__img {
   margin-bottom: 40px;
   @include tablet {
