@@ -9,7 +9,7 @@
   refs.closeModalBtnAbout.addEventListener('click', toggleModalAbout);
 
   function toggleModalAbout() {
-    document.body.classList.toggle('.lock');
+    document.body.classList.toggle('lock');
     refs.modalAbout.classList.toggle('about-is-hidden');
   }
   // on click anywhere NOT the window close modal
