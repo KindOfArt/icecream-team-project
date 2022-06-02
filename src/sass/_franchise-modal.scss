@@ -27,10 +27,17 @@
   overflow-y: auto;
   border-radius: 24px;
   background-color: $main-white;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   border: 1px solid $border-color;
   @media screen and (max-width: 767px) {
-    width: 60%;
+    max-width: 60%;
     height: 70vh;
     padding: 30px 20px;
   }

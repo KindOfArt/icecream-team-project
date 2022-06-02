@@ -12,11 +12,11 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle('modal-open');
+    document.body.classList.toggle('lock');
     refs.modal.classList.toggle('header-is-hidden');
     if (!refs.modal.classList.contains('header-is-hidden')) {
       refs.mobileMenu.classList.remove('is-open');
-      document.body.style.overflow = null;
+      document.body.classList.remove('burger-close');
     }
   }
 })();

@@ -28,14 +28,7 @@
   border-radius: 24px;
   background-color: $main-white;
   border: 1px solid $border-color;
-  // background-image: url(../images/about/mobile/cow-mob.png);
-  // background-repeat: no-repeat;
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url(../images/about/mobile/cow-mob@2x.png);
-  //   background-size: 280px 279px;
-  // }
+
   @media screen and (max-width: 767px) {
     width: 60%;
     height: 70vh;
@@ -81,30 +74,12 @@
   line-height: 31px;
   color: $main-black;
   padding: 2px 30px;
-  text-align: center;
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  // text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 19px;
-}
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }

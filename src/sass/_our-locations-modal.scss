@@ -22,10 +22,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: calc(100% - 30px);
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-  @media screen and (min-width: 480px) {
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  @media (max-width: 767px) {
+    height: 60vh;
+  }
+  @media (min-width: 768px) {
+    height: 65vh;
     width: 450px;
   }
 
@@ -82,4 +92,7 @@
 .modal-map {
   width: calc(100% - 30px);
   height: 300px;
+  @media (min-width: 1280px) {
+    height: 420px;
+  }
 }

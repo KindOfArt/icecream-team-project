@@ -14,9 +14,9 @@
     pointer-events: none;
     visibility: hidden;
   }
-  @include tablet {
-    overflow: hidden;
-  }
+  // @include tablet {
+  //   overflow-y: hidden;
+  // }
 }
 
 .list {
@@ -30,9 +30,11 @@
   position: absolute;
   top: 50vh;
   left: 50%;
-  height: 600px;
-  @include tablet {
-    height: 500px;
+  @media (max-width: 767px) {
+    height: 60vh;
+  }
+  @media (min-width: 768px) {
+    max-height: 85vh;
   }
   @include desktop {
     height: 600px;
@@ -59,6 +61,14 @@
     line-height: 1.5;
     color: $first-accent-color;
     padding: 15px 15px;
+  }
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 
