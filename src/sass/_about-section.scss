@@ -4,7 +4,7 @@
   background-color: $bg-gradient-color;
   background-image: url(../images/about/mobile/drop-of-milk-mob.png);
   background-repeat: no-repeat;
-  background-position: 0% 79%;
+  background-position: 0% 74%;
   background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
@@ -20,7 +20,7 @@
   @include desktop {
     padding-top: 60px;
     background-image: url(../images/about/desktop/drop-of-milk-desk.png);
-    background-position: 100% 100%;
+    background-position: 50% 100%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
