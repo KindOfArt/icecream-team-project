@@ -13,7 +13,7 @@
   refs.closeModalBtnFranchise.addEventListener('click', toggleModalFranchise);
 
   function toggleModalFranchise() {
-    document.body.classList.toggle('modal-open');
+    document.body.classList.toggle('lock');
     refs.modalFranchise.classList.toggle('franchise-is-hidden');
   }
   // on click anywhere NOT the window close modal
