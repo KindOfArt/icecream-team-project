@@ -1,2 +1,0 @@
-(()=>{const e={openModalBtnFranchise:document.querySelector("[data-modal-open-franchise]"),closeModalBtnFranchise:document.querySelector("[data-modal-close-franchise]"),modalFranchise:document.querySelector("[data-modal-franchise]")};function a(){document.body.classList.toggle("modal-open"),e.modalFranchise.classList.toggle("franchise-is-hidden")}e.openModalBtnFranchise.addEventListener("click",a),e.closeModalBtnFranchise.addEventListener("click",a)})();
-//# sourceMappingURL=index.765d3e18.js.map
