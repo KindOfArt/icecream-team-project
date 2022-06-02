@@ -20,6 +20,13 @@
   padding: 20px;
   height: 60vh;
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   @media (max-width: 767px) {
     min-width: 310px;
   }

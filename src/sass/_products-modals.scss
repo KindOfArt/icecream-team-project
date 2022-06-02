@@ -14,9 +14,9 @@
     pointer-events: none;
     visibility: hidden;
   }
-  @include tablet {
-    overflow-y: hidden;
-  }
+  // @include tablet {
+  //   overflow-y: hidden;
+  // }
 }
 
 .list {
@@ -32,10 +32,10 @@
   top: 50vh;
   left: 50%;
   @media (max-width: 767px) {
-    height: 300px;
+    height: 60vh;
   }
   @media (min-width: 768px) {
-    height: 500px;
+    max-height: 85vh;
   }
   transform: translate(-50%, -50%);
   border-radius: 24px;
@@ -56,6 +56,14 @@
     line-height: 1.5;
     color: $first-accent-color;
     padding: 15px 15px;
+  }
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 

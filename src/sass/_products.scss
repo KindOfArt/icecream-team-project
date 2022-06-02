@@ -55,8 +55,8 @@ p {
 
 .products__list {
   display: flex;
-  padding: 0;
   flex-direction: column;
+  gap: 10px;
   @media (min-width: 768px) {
     // display: flex;
     gap: 16px;
